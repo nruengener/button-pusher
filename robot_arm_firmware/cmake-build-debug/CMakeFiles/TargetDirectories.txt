@@ -1,0 +1,11 @@
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/tobler_arm_arduino.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/workspace/tobler_arm_arduino/cmake-build-debug/CMakeFiles/rebuild_cache.dir

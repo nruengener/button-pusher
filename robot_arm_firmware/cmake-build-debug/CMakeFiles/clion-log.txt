@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" G:\workspace\tobler_arm_arduino
+-- Configuring done
+-- Generating done
+-- Build files have been written to: G:/workspace/tobler_arm_arduino/cmake-build-debug
