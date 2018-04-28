@@ -13,14 +13,14 @@
     <SUITE FILE_PATH="coverage/camtest$camtest.coverage" NAME="camtest Coverage Results" MODIFIED="1523898765815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/camtest$videotest.coverage" NAME="videotest Coverage Results" MODIFIED="1524065090974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/camtest$hist_meanshift_test.coverage" NAME="hist_meanshift_test Coverage Results" MODIFIED="1524155847974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/camtest$test_tracking.coverage" NAME="test_tracking Coverage Results" MODIFIED="1524910057735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/camtest$test_tracking.coverage" NAME="test_tracking Coverage Results" MODIFIED="1524916991044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="test_tracking.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_tracking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-824">
               <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
@@ -29,8 +29,8 @@
       <file leaf-file-name="movement.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="337">
+              <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -41,8 +41,17 @@
       <file leaf-file-name="serial_com.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serial_com.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="201">
+              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serialutil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/708213033/88424307/serial/serialutil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="643" column="8" selection-start-line="643" selection-start-column="8" selection-end-line="643" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -149,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/serial_com.py" />
         <option value="$PROJECT_DIR$/camtest.py" />
         <option value="$PROJECT_DIR$/videotest.py" />
         <option value="$PROJECT_DIR$/pi_video_stream.py" />
@@ -160,6 +168,7 @@
         <option value="$PROJECT_DIR$/object_tracker.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/test_tracking.py" />
+        <option value="$PROJECT_DIR$/serial_com.py" />
         <option value="$PROJECT_DIR$/movement.py" />
       </list>
     </option>
@@ -385,18 +394,18 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.36460555" side_tool="true" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.36567163" side_tool="true" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" order="7" sideWeight="0.5847548" weight="0.33743018" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4989339" weight="0.31955308" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63539445" visible="true" weight="0.32849163" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.63432837" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.32960895" />
       <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.27345416" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63061565" visible="true" weight="0.19083156" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48400852" weight="0.33743018" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48347548" weight="0.33743018" />
       <window_info anchor="right" id="SciView" order="3" weight="0.1390625" />
       <window_info id="Structure" order="1" sideWeight="0.36938435" side_tool="true" visible="true" weight="0.19083156" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -584,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/708213033/88424307/serial/serialutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="643" column="8" selection-start-line="643" selection-start-column="8" selection-end-line="643" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/708213033/88424307/imutils/video/pivideostream.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
@@ -758,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serial_com.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -781,15 +776,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_tracking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="-824">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/708213033/88424307/serial/serialutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="643" column="8" selection-start-line="643" selection-start-column="8" selection-end-line="643" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serial_com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="337">
+          <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

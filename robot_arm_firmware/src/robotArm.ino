@@ -121,6 +121,7 @@ void loop() {
 
 void cmdMove(Cmd (&cmd)) {
     if (!geometry.isReachable(cmd.valueX, cmd.valueY, cmd.valueZ)) {
+        printOutOfReach();
         Serial.println("cmd: out of range");
 //        Serial.println(cmd.valueX);
 //        Serial.println(cmd.valueY);
@@ -139,8 +140,8 @@ void cmdMoveRelative(Cmd (&cmd)) {
     newE = cmd.valueE + interpolator.getEPosmm();
 
     if (!geometry.isReachable(newX, newY, newZ)) {
-        Serial.println("relative cmd: out of range");
         printOutOfReach();
+        Serial.println("relative cmd: out of range");
 //        Serial.println(newX);
 //        Serial.println(newY);
 //        Serial.println(newZ);

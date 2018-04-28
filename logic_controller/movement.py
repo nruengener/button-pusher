@@ -40,17 +40,22 @@ class Movement:
         response = self.serial_communication.write(command).strip()
         if response == 'ok':
             response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
+            if response == 'cf':
+                time.sleep(0.3)
+                return True
             if response == 'er':
                 print("Endstop reached! Moving to home position.")
                 response = self.serial_communication.read_until_received("cf", "!!", "or")
                 print(response)
                 print("comments received: ", self.serial_communication.read_all())
-            # print("comments from robot arm: ", self.serial_communication.read_all())
-            time.sleep(0.2)
+                return True
+            print("comments from robot arm: ", self.serial_communication.read_all())
             print("Command result: ", response)
+            return False
         else:
             print("move err response: ", response)
             print("received: ", self.serial_communication.read_all())
+            return False
 
     def move_home(self):
         response = self.serial_communication.write('H0')
@@ -58,7 +63,7 @@ class Movement:
             response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
             print("comments from robot arm: ", self.serial_communication.read_all())
             time.sleep(0.2)
-            print("Command result: ", response)
+            print("Move Home result: ", response)
         else:
             print("move home err response: ", response)
             print("received: ", self.serial_communication.read_all())
@@ -140,8 +145,8 @@ class Movement:
             print("Tracking Error")
             return False, 0, 0, 0
 
-        x1 = 0.89 * x1  # failure in movement
-        z1 = 0.89 * z1
+        x1 = 0.9 * x1  # failure in movement
+        z1 = 0.9 * z1
         x_cam = x1 * (DIST_CAM_BASE_START / (DIST_CAM_BASE_START + DIST_ENDSTOP_CAM))
         print("x1: ", x1, ", x_cam: ", x_cam)
 
@@ -168,8 +173,8 @@ class Movement:
         # if angle_to_hor2 < 0:
         #         z2 = -z2
 
-        y = abs((x1 + x2) / math.tan(angle_to_ver1))
-        y_z = abs((z1 + z2) / math.tan(angle_to_hor1))
+        y = abs((x1 + x2) / math.tan(angle_to_ver1)) if angle_to_ver1 > 0 else 0
+        y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if angle_to_hor1 > 0 else 0
         if y == 0:
             y = y_z
 

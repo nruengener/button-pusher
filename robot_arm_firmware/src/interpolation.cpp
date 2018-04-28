@@ -1,5 +1,6 @@
 #include "interpolation.h"
 #include "configuration.h"
+#include "command.h"
 
 void Interpolation::setCurrentPos(float px, float py, float pz, float pe) {
     Point p;
@@ -58,6 +59,7 @@ int Interpolation::setInterpolation(Point p1, float v) {
 int Interpolation::setInterpolation(Point p0, Point p1, float av) {
     if (p1.xmm > UPPER_LIMIT_X || p1.xmm < LOWER_LIMIT_X || p1.ymm > UPPER_LIMIT_Y || p1.ymm < LOWER_LIMIT_Y ||
         p1.zmm > UPPER_LIMIT_Z || p1.zmm < LOWER_LIMIT_Z) {
+        printOutOfReach();
         return 1;
     }
 
