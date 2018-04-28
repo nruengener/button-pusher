@@ -140,6 +140,7 @@ void cmdMoveRelative(Cmd (&cmd)) {
 
     if (!geometry.isReachable(newX, newY, newZ)) {
         Serial.println("relative cmd: out of range");
+        printOutOfReach();
 //        Serial.println(newX);
 //        Serial.println(newY);
 //        Serial.println(newZ);

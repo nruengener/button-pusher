@@ -6,7 +6,7 @@ import cv2
 
 import serial_com
 from config import *
-from object_tracker import ThreadedObjectTracker, FeatureTracker
+from object_tracker import FeatureTracker
 from pi_video_stream import PiVideoStream
 from movement import Movement
 

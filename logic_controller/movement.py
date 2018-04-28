@@ -26,7 +26,7 @@ class Movement:
         # print("Response from robot: ", response, ". Command was: ", command)
         if response == 'ok':
             # print("waiting for result...")
-            response = self.serial_communication.read_until_received("cf", "!!", "er", "or")
+            response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
             time.sleep(0.2)
             print("Command result: ", response)
         else:
@@ -39,11 +39,12 @@ class Movement:
         print("cartesian command: ", command)
         response = self.serial_communication.write(command).strip()
         if response == 'ok':
-            response = self.serial_communication.read_until_received("cf", "!!", "er", "or")
+            response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
             if response == 'er':
                 print("Endstop reached! Moving to home position.")
                 response = self.serial_communication.read_until_received("cf", "!!", "or")
                 print(response)
+                print("comments received: ", self.serial_communication.read_all())
             # print("comments from robot arm: ", self.serial_communication.read_all())
             time.sleep(0.2)
             print("Command result: ", response)
@@ -54,7 +55,7 @@ class Movement:
     def move_home(self):
         response = self.serial_communication.write('H0')
         if response == 'ok':
-            response = self.serial_communication.read_until_received("cf", "!!", "er", "or")
+            response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
             print("comments from robot arm: ", self.serial_communication.read_all())
             time.sleep(0.2)
             print("Command result: ", response)
@@ -131,6 +132,7 @@ class Movement:
         if x1 == 0 and z1 == 0:
             return True, 0, 0, 0
 
+        # todo: move result (e.g. moving error, timeout ...) and return False if no success
         self.move_cartesian(x1, 0, z1, 50)
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()

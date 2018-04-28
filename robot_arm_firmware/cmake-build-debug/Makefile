@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = G:\workspace\tobler_arm_arduino
+CMAKE_SOURCE_DIR = G:\workspace\button_pusher\robot_arm_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = G:\workspace\tobler_arm_arduino\cmake-build-debug
+CMAKE_BINARY_DIR = G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -226,86 +226,221 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
-lib/Bounce2/Bounce2.obj: lib/Bounce2/Bounce2.cpp.obj
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.obj: G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj
 
-.PHONY : lib/Bounce2/Bounce2.obj
-
-# target to build an object file
-lib/Bounce2/Bounce2.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj
-.PHONY : lib/Bounce2/Bounce2.cpp.obj
-
-lib/Bounce2/Bounce2.i: lib/Bounce2/Bounce2.cpp.i
-
-.PHONY : lib/Bounce2/Bounce2.i
-
-# target to preprocess a source file
-lib/Bounce2/Bounce2.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.i
-.PHONY : lib/Bounce2/Bounce2.cpp.i
-
-lib/Bounce2/Bounce2.s: lib/Bounce2/Bounce2.cpp.s
-
-.PHONY : lib/Bounce2/Bounce2.s
-
-# target to generate assembly for a file
-lib/Bounce2/Bounce2.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.s
-.PHONY : lib/Bounce2/Bounce2.cpp.s
-
-src/RampsStepper.obj: src/RampsStepper.cpp.obj
-
-.PHONY : src/RampsStepper.obj
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.obj
 
 # target to build an object file
-src/RampsStepper.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj
-.PHONY : src/RampsStepper.cpp.obj
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj
 
-src/RampsStepper.i: src/RampsStepper.cpp.i
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.i: G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i
 
-.PHONY : src/RampsStepper.i
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.i
 
 # target to preprocess a source file
-src/RampsStepper.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.i
-.PHONY : src/RampsStepper.cpp.i
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i
 
-src/RampsStepper.s: src/RampsStepper.cpp.s
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.s: G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s
 
-.PHONY : src/RampsStepper.s
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.s
 
 # target to generate assembly for a file
-src/RampsStepper.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.s
-.PHONY : src/RampsStepper.cpp.s
+G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s
 
-src/command.obj: src/command.cpp.obj
+G_/workspace/tobler_arm_arduino/src/RampsStepper.obj: G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj
 
-.PHONY : src/command.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.obj
 
 # target to build an object file
-src/command.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj
-.PHONY : src/command.cpp.obj
+G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj
 
-src/command.i: src/command.cpp.i
+G_/workspace/tobler_arm_arduino/src/RampsStepper.i: G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i
 
-.PHONY : src/command.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.i
 
 # target to preprocess a source file
-src/command.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.i
-.PHONY : src/command.cpp.i
+G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i
 
-src/command.s: src/command.cpp.s
+G_/workspace/tobler_arm_arduino/src/RampsStepper.s: G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s
 
-.PHONY : src/command.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.s
 
 # target to generate assembly for a file
-src/command.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.s
-.PHONY : src/command.cpp.s
+G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/command.obj: G_/workspace/tobler_arm_arduino/src/command.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/command.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/command.i: G_/workspace/tobler_arm_arduino/src/command.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/command.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/command.s: G_/workspace/tobler_arm_arduino/src/command.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/command.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/command.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/endstop.obj: G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/endstop.i: G_/workspace/tobler_arm_arduino/src/endstop.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/endstop.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/endstop.s: G_/workspace/tobler_arm_arduino/src/endstop.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/endstop.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/endstop.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/fk.obj: G_/workspace/tobler_arm_arduino/src/fk.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/fk.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/fk.i: G_/workspace/tobler_arm_arduino/src/fk.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/fk.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/fk.s: G_/workspace/tobler_arm_arduino/src/fk.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/fk.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/fk.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/ik.obj: G_/workspace/tobler_arm_arduino/src/ik.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/ik.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/ik.i: G_/workspace/tobler_arm_arduino/src/ik.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/ik.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/ik.s: G_/workspace/tobler_arm_arduino/src/ik.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/ik.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/ik.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/interpolation.obj: G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/interpolation.i: G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/interpolation.s: G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s
+
+G_/workspace/tobler_arm_arduino/src/robotGeometry.obj: G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.obj
+
+# target to build an object file
+G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj
+
+G_/workspace/tobler_arm_arduino/src/robotGeometry.i: G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.i
+
+# target to preprocess a source file
+G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i
+
+G_/workspace/tobler_arm_arduino/src/robotGeometry.s: G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s
+
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.s
+
+# target to generate assembly for a file
+G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s:
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s
+.PHONY : G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s
 
 src/endstop.obj: src/endstop.cpp.obj
 
@@ -334,33 +469,6 @@ src/endstop.cpp.s:
 	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.s
 .PHONY : src/endstop.cpp.s
 
-src/fanControl.obj: src/fanControl.cpp.obj
-
-.PHONY : src/fanControl.obj
-
-# target to build an object file
-src/fanControl.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj
-.PHONY : src/fanControl.cpp.obj
-
-src/fanControl.i: src/fanControl.cpp.i
-
-.PHONY : src/fanControl.i
-
-# target to preprocess a source file
-src/fanControl.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.i
-.PHONY : src/fanControl.cpp.i
-
-src/fanControl.s: src/fanControl.cpp.s
-
-.PHONY : src/fanControl.s
-
-# target to generate assembly for a file
-src/fanControl.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.s
-.PHONY : src/fanControl.cpp.s
-
 src/fk.obj: src/fk.cpp.obj
 
 .PHONY : src/fk.obj
@@ -387,33 +495,6 @@ src/fk.s: src/fk.cpp.s
 src/fk.cpp.s:
 	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.s
 .PHONY : src/fk.cpp.s
-
-src/gripper.obj: src/gripper.cpp.obj
-
-.PHONY : src/gripper.obj
-
-# target to build an object file
-src/gripper.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj
-.PHONY : src/gripper.cpp.obj
-
-src/gripper.i: src/gripper.cpp.i
-
-.PHONY : src/gripper.i
-
-# target to preprocess a source file
-src/gripper.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.i
-.PHONY : src/gripper.cpp.i
-
-src/gripper.s: src/gripper.cpp.s
-
-.PHONY : src/gripper.s
-
-# target to generate assembly for a file
-src/gripper.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.s
-.PHONY : src/gripper.cpp.s
 
 src/ik.obj: src/ik.cpp.obj
 
@@ -442,60 +523,6 @@ src/ik.cpp.s:
 	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.s
 .PHONY : src/ik.cpp.s
 
-src/interpolation.obj: src/interpolation.cpp.obj
-
-.PHONY : src/interpolation.obj
-
-# target to build an object file
-src/interpolation.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj
-.PHONY : src/interpolation.cpp.obj
-
-src/interpolation.i: src/interpolation.cpp.i
-
-.PHONY : src/interpolation.i
-
-# target to preprocess a source file
-src/interpolation.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.i
-.PHONY : src/interpolation.cpp.i
-
-src/interpolation.s: src/interpolation.cpp.s
-
-.PHONY : src/interpolation.s
-
-# target to generate assembly for a file
-src/interpolation.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.s
-.PHONY : src/interpolation.cpp.s
-
-src/robotGeometry.obj: src/robotGeometry.cpp.obj
-
-.PHONY : src/robotGeometry.obj
-
-# target to build an object file
-src/robotGeometry.cpp.obj:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj
-.PHONY : src/robotGeometry.cpp.obj
-
-src/robotGeometry.i: src/robotGeometry.cpp.i
-
-.PHONY : src/robotGeometry.i
-
-# target to preprocess a source file
-src/robotGeometry.cpp.i:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.i
-.PHONY : src/robotGeometry.cpp.i
-
-src/robotGeometry.s: src/robotGeometry.cpp.s
-
-.PHONY : src/robotGeometry.s
-
-# target to generate assembly for a file
-src/robotGeometry.cpp.s:
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.s
-.PHONY : src/robotGeometry.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -513,36 +540,39 @@ help:
 	@echo ... PLATFORMIO_UPDATE_ALL
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... lib/Bounce2/Bounce2.obj
-	@echo ... lib/Bounce2/Bounce2.i
-	@echo ... lib/Bounce2/Bounce2.s
-	@echo ... src/RampsStepper.obj
-	@echo ... src/RampsStepper.i
-	@echo ... src/RampsStepper.s
-	@echo ... src/command.obj
-	@echo ... src/command.i
-	@echo ... src/command.s
+	@echo ... G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.obj
+	@echo ... G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.i
+	@echo ... G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/RampsStepper.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/RampsStepper.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/RampsStepper.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/command.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/command.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/command.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/endstop.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/endstop.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/endstop.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/fk.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/fk.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/fk.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/ik.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/ik.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/ik.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/interpolation.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/interpolation.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/interpolation.s
+	@echo ... G_/workspace/tobler_arm_arduino/src/robotGeometry.obj
+	@echo ... G_/workspace/tobler_arm_arduino/src/robotGeometry.i
+	@echo ... G_/workspace/tobler_arm_arduino/src/robotGeometry.s
 	@echo ... src/endstop.obj
 	@echo ... src/endstop.i
 	@echo ... src/endstop.s
-	@echo ... src/fanControl.obj
-	@echo ... src/fanControl.i
-	@echo ... src/fanControl.s
 	@echo ... src/fk.obj
 	@echo ... src/fk.i
 	@echo ... src/fk.s
-	@echo ... src/gripper.obj
-	@echo ... src/gripper.i
-	@echo ... src/gripper.s
 	@echo ... src/ik.obj
 	@echo ... src/ik.i
 	@echo ... src/ik.s
-	@echo ... src/interpolation.obj
-	@echo ... src/interpolation.i
-	@echo ... src/interpolation.s
-	@echo ... src/robotGeometry.obj
-	@echo ... src/robotGeometry.i
-	@echo ... src/robotGeometry.s
 .PHONY : help
 
 

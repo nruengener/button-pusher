@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = G:\workspace\tobler_arm_arduino
+CMAKE_SOURCE_DIR = G:\workspace\button_pusher\robot_arm_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = G:\workspace\tobler_arm_arduino\cmake-build-debug
+CMAKE_BINARY_DIR = G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug
 
 # Utility rule file for PLATFORMIO_UPLOAD.
 
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = G:\workspace\tobler_arm_arduino\cmake-build-debug
 include CMakeFiles/PLATFORMIO_UPLOAD.dir/progress.make
 
 CMakeFiles/PLATFORMIO_UPLOAD:
-	cd /d G:\workspace\tobler_arm_arduino && C:\Users\Wohn\.platformio\penv\Scripts\platformio.exe -f -c clion run --target upload
+	cd /d G:\workspace\button_pusher\robot_arm_firmware && C:\Users\Wohn\.platformio\penv\Scripts\platformio.exe -f -c clion run --target upload
 
 PLATFORMIO_UPLOAD: CMakeFiles/PLATFORMIO_UPLOAD
 PLATFORMIO_UPLOAD: CMakeFiles/PLATFORMIO_UPLOAD.dir/build.make
@@ -70,6 +70,6 @@ CMakeFiles/PLATFORMIO_UPLOAD.dir/clean:
 .PHONY : CMakeFiles/PLATFORMIO_UPLOAD.dir/clean
 
 CMakeFiles/PLATFORMIO_UPLOAD.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" G:\workspace\tobler_arm_arduino G:\workspace\tobler_arm_arduino G:\workspace\tobler_arm_arduino\cmake-build-debug G:\workspace\tobler_arm_arduino\cmake-build-debug G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles\PLATFORMIO_UPLOAD.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" G:\workspace\button_pusher\robot_arm_firmware G:\workspace\button_pusher\robot_arm_firmware G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles\PLATFORMIO_UPLOAD.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PLATFORMIO_UPLOAD.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: G:/workspace/tobler_arm_arduino
+# Install script for directory: G:/workspace/button_pusher/robot_arm_firmware
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "G:/workspace/tobler_arm_arduino/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "G:/workspace/button_pusher/robot_arm_firmware/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = G:\workspace\tobler_arm_arduino
+CMAKE_SOURCE_DIR = G:\workspace\button_pusher\robot_arm_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = G:\workspace\tobler_arm_arduino\cmake-build-debug
+CMAKE_BINARY_DIR = G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tobler_arm_arduino.dir/depend.make
@@ -56,169 +56,219 @@ include CMakeFiles/tobler_arm_arduino.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tobler_arm_arduino.dir/flags.make
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj: ../src/RampsStepper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\RampsStepper.cpp.obj -c G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj: G:/workspace/tobler_arm_arduino/src/RampsStepper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\RampsStepper.cpp.obj -c G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp > CMakeFiles\tobler_arm_arduino.dir\src\RampsStepper.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\RampsStepper.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\RampsStepper.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\RampsStepper.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\RampsStepper.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj
-
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj: ../src/command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\command.cpp.obj -c G:\workspace\tobler_arm_arduino\src\command.cpp
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\command.cpp > CMakeFiles\tobler_arm_arduino.dir\src\command.cpp.i
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\command.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\command.cpp.s
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.requires:
-
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.requires
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.provides
-
-CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj
 
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: ../src/endstop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.obj -c G:\workspace\tobler_arm_arduino\src\endstop.cpp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj: G:/workspace/tobler_arm_arduino/src/command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\command.cpp.obj -c G:\workspace\tobler_arm_arduino\src\command.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\endstop.cpp > CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\command.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\command.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\endstop.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\command.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\command.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj
-
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj: ../src/fanControl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\fanControl.cpp.obj -c G:\workspace\tobler_arm_arduino\src\fanControl.cpp
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\fanControl.cpp > CMakeFiles\tobler_arm_arduino.dir\src\fanControl.cpp.i
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\fanControl.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\fanControl.cpp.s
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.requires:
-
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.requires
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.provides
-
-CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj
 
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: ../src/fk.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.obj -c G:\workspace\tobler_arm_arduino\src\fk.cpp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj: G:/workspace/tobler_arm_arduino/src/endstop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\endstop.cpp.obj -c G:\workspace\tobler_arm_arduino\src\endstop.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\fk.cpp > CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\endstop.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\endstop.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\fk.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\endstop.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\endstop.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj
 
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj: ../src/gripper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\gripper.cpp.obj -c G:\workspace\tobler_arm_arduino\src\gripper.cpp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj: G:/workspace/tobler_arm_arduino/src/fk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\fk.cpp.obj -c G:\workspace\tobler_arm_arduino\src\fk.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\gripper.cpp > CMakeFiles\tobler_arm_arduino.dir\src\gripper.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\fk.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\fk.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\gripper.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\gripper.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\fk.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\fk.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj
+
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj: G:/workspace/tobler_arm_arduino/src/ik.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\ik.cpp.obj -c G:\workspace\tobler_arm_arduino\src\ik.cpp
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\ik.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\ik.cpp.i
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\ik.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\ik.cpp.s
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.requires:
+
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.requires
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.provides
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj
+
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj: G:/workspace/tobler_arm_arduino/src/interpolation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\interpolation.cpp.obj -c G:\workspace\tobler_arm_arduino\src\interpolation.cpp
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\interpolation.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\interpolation.cpp.i
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\interpolation.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\interpolation.cpp.s
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.requires:
+
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.requires
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.provides
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj
+
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj: G:/workspace/tobler_arm_arduino/src/robotGeometry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\robotGeometry.cpp.obj -c G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\robotGeometry.cpp.i
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\src\robotGeometry.cpp.s
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.requires:
+
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.requires
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.provides
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj
+
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj: G:/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp.obj -c G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp > CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp.i
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp -o CMakeFiles\tobler_arm_arduino.dir\G_\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp.s
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.requires:
+
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.requires
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.provides
+
+CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj
 
 
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj: ../src/ik.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.obj -c G:\workspace\tobler_arm_arduino\src\ik.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.obj -c G:\workspace\button_pusher\robot_arm_firmware\src\ik.cpp
 
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\ik.cpp > CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.i
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\button_pusher\robot_arm_firmware\src\ik.cpp > CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.i
 
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\ik.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.s
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\button_pusher\robot_arm_firmware\src\ik.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\ik.cpp.s
 
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj.requires:
 
@@ -231,112 +281,89 @@ CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj.provides: CMakeFiles/tobler_arm
 CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj
 
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj: ../src/interpolation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\interpolation.cpp.obj -c G:\workspace\tobler_arm_arduino\src\interpolation.cpp
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj: ../src/fk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.obj -c G:\workspace\button_pusher\robot_arm_firmware\src\fk.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\interpolation.cpp > CMakeFiles\tobler_arm_arduino.dir\src\interpolation.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\button_pusher\robot_arm_firmware\src\fk.cpp > CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\interpolation.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\interpolation.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\button_pusher\robot_arm_firmware\src\fk.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\fk.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj
-
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj: ../src/robotGeometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\robotGeometry.cpp.obj -c G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp > CMakeFiles\tobler_arm_arduino.dir\src\robotGeometry.cpp.i
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\src\robotGeometry.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\robotGeometry.cpp.s
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.requires:
-
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.requires
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.provides
-
-CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj
 
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj: ../lib/Bounce2/Bounce2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\lib\Bounce2\Bounce2.cpp.obj -c G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/flags.make
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: CMakeFiles/tobler_arm_arduino.dir/includes_CXX.rsp
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj: ../src/endstop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.obj -c G:\workspace\button_pusher\robot_arm_firmware\src\endstop.cpp
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.i"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp > CMakeFiles\tobler_arm_arduino.dir\lib\Bounce2\Bounce2.cpp.i
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.i"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\workspace\button_pusher\robot_arm_firmware\src\endstop.cpp > CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.i
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.s"
-	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\tobler_arm_arduino\lib\Bounce2\Bounce2.cpp -o CMakeFiles\tobler_arm_arduino.dir\lib\Bounce2\Bounce2.cpp.s
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.s"
+	C:\Users\Wohn\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\workspace\button_pusher\robot_arm_firmware\src\endstop.cpp -o CMakeFiles\tobler_arm_arduino.dir\src\endstop.cpp.s
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.requires:
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires:
 
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.requires
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.provides.build
-.PHONY : CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.provides
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\tobler_arm_arduino.dir\build.make CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides.build
+.PHONY : CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides
 
-CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj
+CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.provides.build: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj
 
 
 # Object files for target tobler_arm_arduino
 tobler_arm_arduino_OBJECTS = \
-"CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj" \
 "CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj" \
-"CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj"
+"CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj" \
+"CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj"
 
 # External object files for target tobler_arm_arduino
 tobler_arm_arduino_EXTERNAL_OBJECTS =
 
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj
 tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj
-tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj
+tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj
 tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/build.make
 tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/linklibs.rsp
 tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/objects1.rsp
 tobler_arm_arduino.exe: CMakeFiles/tobler_arm_arduino.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable tobler_arm_arduino.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable tobler_arm_arduino.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tobler_arm_arduino.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -344,16 +371,17 @@ CMakeFiles/tobler_arm_arduino.dir/build: tobler_arm_arduino.exe
 
 .PHONY : CMakeFiles/tobler_arm_arduino.dir/build
 
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/RampsStepper.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/command.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/fanControl.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/gripper.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/RampsStepper.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/command.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/endstop.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/fk.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/ik.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/interpolation.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/src/robotGeometry.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/G_/workspace/tobler_arm_arduino/lib/Bounce2/Bounce2.cpp.obj.requires
 CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/ik.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/interpolation.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/robotGeometry.cpp.obj.requires
-CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/lib/Bounce2/Bounce2.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/fk.cpp.obj.requires
+CMakeFiles/tobler_arm_arduino.dir/requires: CMakeFiles/tobler_arm_arduino.dir/src/endstop.cpp.obj.requires
 
 .PHONY : CMakeFiles/tobler_arm_arduino.dir/requires
 
@@ -362,6 +390,6 @@ CMakeFiles/tobler_arm_arduino.dir/clean:
 .PHONY : CMakeFiles/tobler_arm_arduino.dir/clean
 
 CMakeFiles/tobler_arm_arduino.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" G:\workspace\tobler_arm_arduino G:\workspace\tobler_arm_arduino G:\workspace\tobler_arm_arduino\cmake-build-debug G:\workspace\tobler_arm_arduino\cmake-build-debug G:\workspace\tobler_arm_arduino\cmake-build-debug\CMakeFiles\tobler_arm_arduino.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" G:\workspace\button_pusher\robot_arm_firmware G:\workspace\button_pusher\robot_arm_firmware G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug G:\workspace\button_pusher\robot_arm_firmware\cmake-build-debug\CMakeFiles\tobler_arm_arduino.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tobler_arm_arduino.dir/depend
 
