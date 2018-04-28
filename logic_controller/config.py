@@ -10,7 +10,7 @@ F = 3.60  # focal length in mm
 HFOV = 53.50  # horizontal field of view in degrees
 PIXEL_SIZE = 0.0014  # in mm  (1.4 um)
 
-TOLERANCE_RAD = 0.044  # about 2.5 ° tolerance for positioning
+TOLERANCE_RAD = 0.044  # about 2.5 degrees tolerance for positioning
 
 # DIST_CAM_BASE = 0.133  # distance from camera to base in (x,y)-plane in home position in m
 DIST_CAM_BASE = 0.117  # 117  # distance from camera to base in (x,y)-plane in home position in m
