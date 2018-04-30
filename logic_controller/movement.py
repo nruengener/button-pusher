@@ -89,14 +89,15 @@ class Movement:
             dz = 0
             dy = 30
 
+        # move part of the way
         dx3 = dx / 3
         dy3 = dy / 3
-        dz3 = dz / 3
-        # self.move_cartesian(dx3, dy3, dz3)
+        dz3 = dz / 3 + (DIST_ENDSTOP_CAM_Z * 1000 / 3)
+        self.move_cartesian(dx3, dy3, dz3)
 
-        # todo: remove test
-        self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
-        return True
+        # # todo: remove test
+        # self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
+        # return True
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()
         if not ok:
@@ -117,6 +118,12 @@ class Movement:
         print("distance now calculated (to cam): ", d_xyz)
 
         print("b1: ", b1, ", b2: ", b2, ", b1 / (b2 - b1): ", b1 / (b2 - b1))
+
+        angle_to_ver, angle_to_hor = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
+        x, y, z = get_distances_on_axes(g2, angle_to_hor=angle_to_hor, angle_to_ver=angle_to_ver)
+        z = z + DIST_ENDSTOP_CAM_Z * 1000
+        print("new x: ", x, ", y: ", y, ", z: ", z)
+        self.move_cartesian(x, y, z)
 
         return True
 
@@ -145,7 +152,7 @@ class Movement:
             print("Tracking Error")
             return False, 0, 0, 0
 
-        x1 = 0.9 * x1  # failure in movement
+        x1 = 0.9 * x1  # failure in movement (bias?)
         z1 = 0.9 * z1
         x_cam = x1 * (DIST_CAM_BASE_START / (DIST_CAM_BASE_START + DIST_ENDSTOP_CAM))
         print("x1: ", x1, ", x_cam: ", x_cam)
@@ -173,10 +180,13 @@ class Movement:
         # if angle_to_hor2 < 0:
         #         z2 = -z2
 
-        y = abs((x1 + x2) / math.tan(angle_to_ver1)) if angle_to_ver1 > 0 else 0
-        y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if angle_to_hor1 > 0 else 0
+        y = abs((x1 + x2) / math.tan(angle_to_ver1)) if abs(angle_to_ver1) > 0 else 0
+        y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if abs(angle_to_hor1) > 0 else 0
         if y == 0:
             y = y_z
+
+        if y == 0:
+            return False, 0, 0, 0
 
         print("x2: ", x2, ", z2: ", z2, ", y: ", y, ", y_z: ", y_z)
         return True, x2, y, z2

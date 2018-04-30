@@ -212,3 +212,10 @@ def calc_g22(f, d, h1, h2):
     return (B1 * (d - f) + B2 * f) / (B2 - B1)
 
 
+def get_distances_on_axes(d_xyz, angle_to_ver, angle_to_hor):
+    """ Calculate distances on axes to the target """
+    z = math.sin(angle_to_hor) * d_xyz  # without endstop distance to cam on z axis
+    d_xy = math.cos(angle_to_hor) * d_xyz
+    x = math.sin(angle_to_ver) * d_xy
+    y = math.cos(angle_to_ver) * d_xy
+    return x, y, z

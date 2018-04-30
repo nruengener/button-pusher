@@ -50,8 +50,8 @@
 
 // joint angle limits
 #define UPPER_LIMIT_LOW 2.265 // shoulder 235
-#define LOWER_LIMIT_LOW 0.635
-#define UPPER_LIMIT_HIGH 0.26 // elbow
+#define LOWER_LIMIT_LOW 0.425 // 0.635
+#define UPPER_LIMIT_HIGH 0.375 // elbow
 #define LOWER_LIMIT_HIGH -0.75  // -0.37
 #define LOWER_LIMIT_BASE -1.5708
 #define UPPER_LIMIT_BASE 1.5708
