@@ -4,7 +4,7 @@ CAMERA_HEIGHT = 976  # 972   # default= 240 Pi Camera Image width
 CAMERA_HFLIP = True  # default= False pi Camera image horiz flip
 CAMERA_VFLIP = True  # default= False pi Camera image vert flip
 CAMERA_ROTATION = 0  # default= 0  Rotate pi Camera image 0, 90, 180, 270 only valid values
-CAMERA_FRAMERATE = 35  # default= 35 framerate of video stream.
+CAMERA_FRAMERATE = 5  # default= 35 framerate of video stream.
 
 F = 3.60  # focal length in mm
 HFOV = 53.50  # horizontal field of view in degrees
