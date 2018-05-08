@@ -4,7 +4,7 @@ import cv2
 
 from image_processing.geometry import *
 from config import CAMERA_WIDTH, HFOV, DIST_CAM_BASE, DIST_ENDSTOP_CAM, TOLERANCE_RAD, DIST_ENDSTOP_CAM_Z, F, \
-    DIST_CAM_BASE_START
+    DIST_CAM_BASE_START, TRACE
 
 focal_pixel = (CAMERA_WIDTH * 0.5) / math.tan(HFOV * 0.5 * math.pi / 180)
 
@@ -88,16 +88,16 @@ class Movement:
             dx = 0
             dz = 0
             dy = 30
+        else:
+            # move directly to target
+            self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
+            return True
 
         # move part of the way
-        dx3 = dx / 3
+        dx3 = dx / 3  # leave for case of always using stop
         dy3 = dy / 3
         dz3 = dz / 3 + (DIST_ENDSTOP_CAM_Z * 1000 / 3)
         self.move_cartesian(dx3, dy3, dz3)
-
-        # # todo: remove test
-        # self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
-        # return True
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()
         if not ok:
@@ -111,20 +111,21 @@ class Movement:
 
         g2 = calc_g2(distance_travelled, h1, h2)
         d_xyz = g2 + distance_travelled
-        print("h1: ", h1, ", h2: ", h2)
-        print("distance_travelled: ", distance_travelled)
-        print("g2: ", g2)
-        print("rest distance (to cam): ", distance(dx, dy, dz))
-        print("distance now calculated (to cam): ", d_xyz)
 
-        print("b1: ", b1, ", b2: ", b2, ", b1 / (b2 - b1): ", b1 / (b2 - b1))
+        if TRACE:
+            print("h1: ", h1, ", h2: ", h2)
+            print("distance_travelled: ", distance_travelled)
+            print("g2: ", g2)
+            print("rest distance (to cam): ", distance(dx, dy, dz))
+            print("distance now calculated (to cam): ", d_xyz)
+            print("b1: ", b1, ", b2: ", b2, ", b1 / (b2 - b1): ", b1 / (b2 - b1))
 
         angle_to_ver, angle_to_hor = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
         x, y, z = get_distances_on_axes(g2, angle_to_hor=angle_to_hor, angle_to_ver=angle_to_ver)
         z = z + DIST_ENDSTOP_CAM_Z * 1000
-        print("new x: ", x, ", y: ", y, ", z: ", z)
+        if TRACE:
+            print("new x: ", x, ", y: ", y, ", z: ", z)
         self.move_cartesian(x, y, z)
-
         return True
 
     def move_sideways(self):

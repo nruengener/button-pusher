@@ -3,7 +3,7 @@ import imutils
 import numpy as np
 import math
 from config import *
-from tesserocr import PyTessBaseAPI
+# from tesserocr import PyTessBaseAPI
 
 def detect_skew(image_np):
     """Detect skew in the image"""
