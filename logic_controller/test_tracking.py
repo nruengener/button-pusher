@@ -4,10 +4,10 @@ import time
 
 import cv2
 
-import serial_com
+from interfaces import serial_com
 from config import *
-from object_tracker import FeatureTracker
-from pi_video_stream import PiVideoStream
+from image_processing.object_tracker import FeatureTracker
+from image_processing.pi_video_stream import PiVideoStream
 from movement import Movement
 
 print("OpenCV version: ", cv2.__version__)

@@ -2,8 +2,8 @@ from threading import Thread
 
 import cv2
 
-from feature_mapping import match_keypoints, match_keypoints_to_polygon
-from geometry import bounding_box_for_polygon, area_for_polygon
+from image_processing.feature_mapping import match_keypoints, match_keypoints_to_polygon
+from image_processing.geometry import bounding_box_for_polygon, area_for_polygon
 
 
 class ObjectTracker:

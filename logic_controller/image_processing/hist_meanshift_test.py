@@ -3,7 +3,7 @@ import time
 import numpy as np
 import cv2
 
-from pi_video_stream import PiVideoStream
+from image_processing.pi_video_stream import PiVideoStream
 
 vs = PiVideoStream()
 

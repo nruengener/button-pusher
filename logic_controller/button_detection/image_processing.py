@@ -2,9 +2,8 @@ import cv2
 import imutils
 import numpy as np
 import math
-
-DEBUG = True
-
+from config import *
+from tesserocr import PyTessBaseAPI
 
 def detect_skew(image_np):
     """Detect skew in the image"""
@@ -45,8 +44,8 @@ def detect_skew(image_np):
         theta_avr /= len(filtered_lines)
         theta_deg = (theta_avr / (np.pi / 180)) - 90
 
-    if DEBUG:
-        cv2.imshow("Skew Lines", cdst)
+    # if DEBUG:
+    #     cv2.imshow("Skew Lines", cdst)
 
     return theta_deg
 
@@ -91,15 +90,20 @@ def find_tokens(image_np):
     # im2, contours, hierarchy = cv2.findContours(edges, cv2.RETR_LIST,
     #                                             cv2.CHAIN_APPROX_NONE)  # CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE
 
+    cv2.imshow('contours', im2)
+
     # filter contours by bounding rect size
     bounding_boxes, filtered_contours = filter_contours(contours)
-    print("number of filtered contours: ", len(filtered_contours), " , boxes: ", len(bounding_boxes))
+    if TRACE:
+        print("number of filtered contours: ", len(filtered_contours), " , boxes: ", len(bounding_boxes))
 
     # cut out found rectangles from edged image
     for i in range(0, len(bounding_boxes)):
         x, y, w, h = bounding_boxes[i]
         tokens.append((x, y, x + w, y + h))
-        # cv2.rectangle(img_ret, (x, y), (x + w, y + h), (255, 200, 50), 2)
+        if TRACE:
+            cv2.rectangle(img_copy, (x, y), (x + w, y + h), (255, 200, 50), 2)
+            cv2.imshow('token ' + str(i), img_copy)
 
     return tokens
 
@@ -125,7 +129,7 @@ def process_image(image_np):
     # blur
     img_blurred = cv2.GaussianBlur(img_gray, (5, 5), 0)
 
-    if DEBUG:
+    if TRACE:
         cv2.imshow('Unrotated/Blurred', img_blurred)
 
     # threshold image
@@ -134,6 +138,7 @@ def process_image(image_np):
     # img_thresh = cv2.adaptiveThreshold(img_blurred,  # input image
     #                                    255,  # make pixels that pass the threshold full white
     #                                    cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+    #                                    # cv2.CALIB_CB_ADAPTIVE_THRESH,
     #                                    # ADAPTIVE_THRESH_MEAN_C
     #                                    # use gaussian rather than mean, seems to give better results
     #                                    cv2.THRESH_BINARY,
@@ -146,11 +151,12 @@ def process_image(image_np):
     # kernel = np.ones((3, 3), np.uint8)  # 5 5
     # img_thresh = cv2.dilate(img_thresh, kernel, iterations=1)
 
-    if DEBUG:
+    if TRACE:
         cv2.imshow('Threshold Dilated', img_thresh)
 
     # detect and correct skew
-    print("skew: ", detect_skew(img_thresh))
+    if TRACE:
+        print("skew: ", detect_skew(img_thresh))
     rotated = imutils.rotate_bound(img_thresh, - detect_skew(img_gray))  # fix skew
 
     return rotated

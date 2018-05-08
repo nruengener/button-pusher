@@ -3,7 +3,7 @@ import time
 import numpy as np
 import cv2
 
-import geometry
+from image_processing import geometry
 
 MIN_MATCH_COUNT = 3  # 10
 FLANN_INDEX_KDTREE = 0
