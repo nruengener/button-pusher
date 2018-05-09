@@ -5,6 +5,7 @@ import math
 from config import *
 # from tesserocr import PyTessBaseAPI
 
+
 def detect_skew(image_np):
     """Detect skew in the image"""
     # find edges with canny
@@ -38,14 +39,15 @@ def detect_skew(image_np):
             y0 = b * rho
             pt1 = (int(x0 + 1000 * (-b)), int(y0 + 1000 * a))
             pt2 = (int(x0 - 1000 * (-b)), int(y0 - 1000 * a))
-            cv2.line(cdst, pt1, pt2, (0, 255, 0), 2)
+            if TRACE:
+                cv2.line(cdst, pt1, pt2, (0, 255, 0), 2)
 
     if len(filtered_lines) > 0:
         theta_avr /= len(filtered_lines)
         theta_deg = (theta_avr / (np.pi / 180)) - 90
 
-    # if DEBUG:
-    #     cv2.imshow("Skew Lines", cdst)
+    if TRACE:
+        cv2.imshow("Skew Lines", cdst)
 
     return theta_deg
 
@@ -76,7 +78,8 @@ def find_aligned_boxes(bounding_boxes):
 
 
 def find_tokens(image_np):
-    """Find and isolate the tokens. Returns an array with boxes for all tokens in the roi. """
+    """Find and isolate the tokens. Returns an array with boxes for all tokens in the roi.
+    Tokens are in format x1, y1, x2 ,y2. """
     tokens = []
 
     # # find edges with canny
@@ -100,6 +103,13 @@ def find_tokens(image_np):
     # cut out found rectangles from edged image
     for i in range(0, len(bounding_boxes)):
         x, y, w, h = bounding_boxes[i]
+        # apply padding for tesseract
+        if x > 5:
+            x = x - 5
+        if y > 5:
+            y = y - 5
+        w = w + 10
+        h = h + 10
         tokens.append((x, y, x + w, y + h))
         if TRACE:
             cv2.rectangle(img_copy, (x, y), (x + w, y + h), (255, 200, 50), 2)

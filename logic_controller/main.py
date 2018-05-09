@@ -67,7 +67,7 @@ if __name__ == '__main__':
         # input_string = keypad.get_input()
         # input_number = int(input_string)
         # print("number entered: ", input_number)
-        input_string = "3"
+        input_string = "14"
 
         # enable motors before cam to get a stable first image
         print(serial_communication.write("M17"))
@@ -114,6 +114,7 @@ if __name__ == '__main__':
         if target is None:
             print("Could not find button with ", input_string, " as label")
             # todo: break outer loop instead of exit
+            cv2.waitKey(0)
             exit(0)
 
         print("selected bbox: ", target)
