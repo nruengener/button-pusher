@@ -42,9 +42,6 @@ def init():
     serial_communication.init_communication()
     serial_communication.read_all()  # clear on start
 
-    # vs.start()
-    # time.sleep(0.2)
-
 
 # shutdown all handles
 def shutdown():

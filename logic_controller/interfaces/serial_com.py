@@ -11,7 +11,7 @@ class SerialCom:
 
     def init_communication(self):
         # s.open()
-        time.sleep(0.2)
+        time.sleep(0.1)
 
     def write(self, text):
         self.s.write((text + "\r\n").encode('utf-8'))  # \r

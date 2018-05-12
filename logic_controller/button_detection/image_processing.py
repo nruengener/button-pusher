@@ -93,7 +93,8 @@ def find_tokens(image_np):
     # im2, contours, hierarchy = cv2.findContours(edges, cv2.RETR_LIST,
     #                                             cv2.CHAIN_APPROX_NONE)  # CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE
 
-    cv2.imshow('contours', im2)
+    if TRACE:
+        cv2.imshow('contours', im2)
 
     # filter contours by bounding rect size
     bounding_boxes, filtered_contours = filter_contours(contours)

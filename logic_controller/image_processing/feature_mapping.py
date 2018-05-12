@@ -3,6 +3,7 @@ import time
 import numpy as np
 import cv2
 
+from config import TRACE
 from image_processing import geometry
 
 MIN_MATCH_COUNT = 3  # 10
@@ -50,23 +51,24 @@ def match_keypoints_to_polygon(img1, img2):
             h, w = img1.shape
             pts = np.float32([[0, 0], [0, h - 1], [w - 1, h - 1], [w - 1, 0]]).reshape(-1, 1, 2)
             dst = cv2.perspectiveTransform(pts, M)
-            img2 = cv2.polylines(img2, [np.int32(dst)], True, 255, 3, cv2.LINE_AA)
-            # cv2.imshow('poly', img2)
 
-            draw_params = dict(matchColor=(0, 255, 0),  # draw matches in green color
-                               singlePointColor=None,
-                               matchesMask=matches_mask,  # draw only inliers
-                               flags=2)
+            if TRACE:
+                img2 = cv2.polylines(img2, [np.int32(dst)], True, 255, 3, cv2.LINE_AA)
+                # cv2.imshow('poly', img2)
 
-            img3 = cv2.drawMatches(img1, kp1, img2, kp2, good, None, **draw_params)
-            global i
-            cv2.imshow("fm" + str(i), img3)
-            i = i+1
-            cv2.waitKey(0)
+                draw_params = dict(matchColor=(0, 255, 0),  # draw matches in green color
+                                   singlePointColor=None,
+                                   matchesMask=matches_mask,  # draw only inliers
+                                   flags=2)
+
+                img3 = cv2.drawMatches(img1, kp1, img2, kp2, good, None, **draw_params)
+                global i
+                cv2.imshow("fm" + str(i), img3)
+                i = i+1
+                cv2.waitKey(0)
 
             # print(np.int32(dst).reshape((4, 2)))
             return True, np.int32(dst).reshape((4, 2))
-            # result_x, result_y = geometry.centroid_for_polygon(np.int32(dst).reshape((4, 2)))
 
         print("Not enough matches are found - ", (len(good) / (MIN_MATCH_COUNT + 1)))
         return False, None

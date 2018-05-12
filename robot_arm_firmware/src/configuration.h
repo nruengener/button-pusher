@@ -46,7 +46,7 @@
 //#define LOWER_LIMIT_Y START_Y - LENGTH_GRIPPER
 #define LOWER_LIMIT_Y START_Y
 #define UPPER_LIMIT_Z LENGTH_ARM1 + 35
-#define LOWER_LIMIT_Z 0
+#define LOWER_LIMIT_Z -15
 
 // joint angle limits
 #define UPPER_LIMIT_LOW 2.265 // shoulder 235
