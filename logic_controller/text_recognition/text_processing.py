@@ -3,7 +3,7 @@ import cv2
 from pytesseract import pytesseract, Output
 
 from button_detection import image_processing
-from config import TRACE
+from config import TRACE, DEBUG
 from text_recognition.token_util import filter_tokens
 
 j = 0
@@ -19,9 +19,11 @@ def find_target(boxes, image, label):
 
         # find tokens for OCR, tokens are in format x1, y1, x2 ,y2
         tokens = image_processing.find_tokens(img_preprocessed)
-        print("#tokens: ", len(tokens))
+        if TRACE:
+            print("#tokens: ", len(tokens))
         tokens = filter_tokens(tokens, img_preprocessed)
-        print("#filtered: ", len(tokens))
+        if TRACE:
+            print("#filtered: ", len(tokens))
 
         if TRACE:
             for t in tokens:
@@ -47,13 +49,17 @@ def find_target(boxes, image, label):
             if data['conf'][len(data['conf']) - 1] > 60:
                 text = text + data['text'][len(data['conf']) - 1]
 
-        print("button label: ", text)
-        if label == text:
+        if DEBUG:
+            print("button label: ", text)
+
+        # return first box with searched label
+        if label == text or (label == '0' and text == 'E') :
             return box
 
     return None
 
 
+# not used anymore
 def recognize_text_in_boxes(boxes, image):
     boxes_ocr = []
     for box in boxes:

@@ -87,7 +87,7 @@ def find_tokens(image_np):
     img_copy = image_np.copy()
 
     # find contours in whole image
-    # todo: use edges here instead of image_np?
+    # todo: use image with edges here instead of image_np?
     im2, contours, hierarchy = cv2.findContours(img_copy, cv2.RETR_TREE,
                                                 cv2.CHAIN_APPROX_SIMPLE)  # CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE
     # im2, contours, hierarchy = cv2.findContours(edges, cv2.RETR_LIST,
@@ -103,7 +103,7 @@ def find_tokens(image_np):
     # cut out found rectangles from edged image
     for i in range(0, len(bounding_boxes)):
         x, y, w, h = bounding_boxes[i]
-        # apply padding for tesseract
+        # apply padding for tesseract (important to improve text detection rate)
         if x > 5:
             x = x - 5
         if y > 5:

@@ -1,5 +1,6 @@
 import platform
 import time
+import traceback
 
 import cv2
 from RPi import GPIO
@@ -56,85 +57,100 @@ def shutdown():
 if __name__ == '__main__':
     try:
         init()
+    except Exception as err:
+        print("Error initializing the system: ", err)
 
-        # wait for user input
-        # todo: handle user input
-        # keypad.start_input()
-        # print("waiting for user input")
-        # while not keypad.input_finished():
-        #     time.sleep(0.1)
-        #
-        # input_string = keypad.get_input()
-        # input_number = int(input_string)
-        # print("number entered: ", input_number)
-        input_string = "14"
+    while True:
+        try:
+            # wait for user input
+            # keypad.start_input()
+            # print("waiting for user input")
+            # while not keypad.input_finished():
+            #     time.sleep(0.1)
+            #
+            # input_string = keypad.get_input()
+            # input_number = int(input_string)
+            # print("number entered: ", input_number)
+            input_string = "0"
 
-        # enable motors before cam to get a stable first image
-        print(serial_communication.write("M17"))
-        # move to allow sideway movement to determine distance
-        movement.move_cartesian(0, 20, 15)
-        time.sleep(.4)
+            # enable motors before cam to get a stable first image
+            print(serial_communication.write("M17"))
+            # move to allow sideway movement to determine distance
+            movement.move_cartesian(0, 20, 15)
+            time.sleep(.4)
 
-        # image = vs.read()
-        image = tracker.get_current_frame()
-        img_resized = resize_to_width(image.copy(), 800, True)
+            # image = vs.read()
+            image = tracker.get_current_frame()
+            img_resized = resize_to_width(image.copy(), 800, True)
 
-        if DEBUG:
-            cv2.imshow('start image', img_resized)
+            if DEBUG:
+                cv2.imshow('start image', img_resized)
 
-        # detect buttons in image
-        # todo: resize image
-        start = time.time()
-        image_detected, boxes = detector.detect_buttons(img_resized)
-        end = time.time()
-        print("[INFO] Conversion and button detection took {:.5} seconds".format(end - start))
-        if DEBUG:
-            cv2.imshow('detected buttons', image_detected)
+            # detect buttons in image
+            # todo: resize image
+            start = time.time()
+            image_detected, boxes = detector.detect_buttons(img_resized)
+            end = time.time()
+            print("[INFO] Conversion and button detection took {:.5} seconds".format(end - start))
+            if DEBUG:
+                cv2.imshow('detected buttons', image_detected)
 
-        if len(boxes) <= 0:
-            print("No buttons detected")
-            exit(0)  # todo: just break loop and wait for input
+            if len(boxes) <= 0:
+                print("No buttons detected")
+                movement.move_home()
+                serial_communication.write("M18")
+                continue
 
-        # resize boxes
-        boxes = convert_boxes(boxes, image)
+            # resize boxes
+            boxes = convert_boxes(boxes, image)
+            # boxes = convert_boxes(boxes, img_resized)
 
-        # find box with desired text
-        start = time.time()
-        target = find_target(boxes, image, input_string)  # todo: use confidence if more than one?
-        end = time.time()
-        print("[INFO] OCR took {:.5} seconds".format(end - start))
+            # find box with desired text
+            start = time.time()
+            target = find_target(boxes, image, input_string)  # todo: use confidence if more than one?
+            # target = find_target(boxes, img_resized, input_string)
+            end = time.time()
+            print("[INFO] OCR took {:.5} seconds".format(end - start))
 
-        # if target is None:
-        #     boxes_ocr = recognize_text_in_boxes(boxes, image)
-        #     for (box, text) in boxes_ocr:
-        #         if text == input_string:
-        #             target = box
-        #             break
+            # if target is None:
+            #     boxes_ocr = recognize_text_in_boxes(boxes, image)
+            #     for (box, text) in boxes_ocr:
+            #         if text == input_string:
+            #             target = box
+            #             break
 
-        if target is None:
-            print("Could not find button with ", input_string, " as label")
-            # todo: break outer loop instead of exit
-            cv2.waitKey(0)
-            exit(0)
+            if target is None:
+                print("Could not find button with ", input_string, " as label")
+                # # todo: break outer loop instead of exit
+                # cv2.waitKey(0)
+                # exit(0)
+                movement.move_home()
+                serial_communication.write("M18")
+                continue
 
-        print("selected bbox: ", target)
+            print("selected bbox: ", target)
+            ok = movement.move_to_target(image, target)
+            if not ok:
+                print("Could not move to target")
 
-        ok = movement.move_to_target(image, target)
-        if not ok:
-            print("Could not move to target")
+            # move to home position
+            movement.move_home()
 
-        # todo: warn if out of reach?
+            #  disable motors
+            serial_communication.write("M18")
 
-        movement.move_home()
+            if DEBUG:
+                cv2.waitKey(0)
 
-        #  disable motors
-        serial_communication.write("M18")
+        except Exception as err:
+            print("Error during system run: ", err)
+            traceback.print_tb(err.__traceback__)
 
-        cv2.waitKey(0)
+        finally:
+            serial_communication.write("M18")  # disable motors in case of exception due to overheating
 
-    finally:
-        #  disable motors
-        serial_communication.write("M18")
-        shutdown()
-        print("exiting...")
+    #  disable motors
+    serial_communication.write("M18")
+    shutdown()
+    print("exiting...")
 
