@@ -137,7 +137,6 @@ class FeatureTracker:
 
         self.area = area_for_polygon(polygon)
         # self.ok = True
-        # todo: somehow calculate rect from polygon
         # print("polygon.reshape((1, 8): ", polygon.reshape((1, 8))[0])
         # self.bbox = cv2.minAreaRect(polygon.reshape((1, 8))[0])
         self.bbox = bounding_box_for_polygon(polygon)

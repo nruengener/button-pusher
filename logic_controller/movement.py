@@ -126,6 +126,7 @@ class Movement:
         if TRACE:
             print("new x: ", x, ", y: ", y, ", z: ", z)
         self.move_cartesian(x, y, z)
+        # todo: stop tracker
         return True
 
     def move_sideways(self):
