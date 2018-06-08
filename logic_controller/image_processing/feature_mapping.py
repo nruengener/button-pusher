@@ -26,7 +26,7 @@ def match_keypoints_to_polygon(img1, img2):
         # det = cv2.BRISK_create()
         # det = cv2.ORB_create()
 
-        # find the keypoints and descriptors with ORB or BRISK (brisk seems to be better), SIFT is too slow
+        # find the keypoints and descriptors with SURF, ORB or BRISK, SIFT is too slow
         kp1, des1 = det.detectAndCompute(img1, None)
         kp2, des2 = det.detectAndCompute(img2, None)
 
