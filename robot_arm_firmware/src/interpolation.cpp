@@ -131,6 +131,7 @@ void Interpolation::updateActualPosition() {
         fcallback(); // execute callback
     }
 
+    // synchrone PTP-Bahnplanung!
     xPosmm = xStartmm + progress * xDelta;
     yPosmm = yStartmm + progress * yDelta;
     zPosmm = zStartmm + progress * zDelta;
