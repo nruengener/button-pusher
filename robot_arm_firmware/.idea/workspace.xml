@@ -86,8 +86,8 @@
       <file leaf-file-name="ik.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ik.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="338">
+              <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -155,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/command.cpp" />
         <option value="$PROJECT_DIR$/src/fk.cpp" />
         <option value="$PROJECT_DIR$/src/RampsStepper.cpp" />
-        <option value="$PROJECT_DIR$/src/ik.cpp" />
         <option value="$PROJECT_DIR$/src/robotGeometry.cpp" />
         <option value="$PROJECT_DIR$/src/endstop.cpp" />
         <option value="$PROJECT_DIR$/../../tobler_arm_arduino/src/robotGeometry.cpp" />
@@ -163,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/robotArm.ino" />
         <option value="$PROJECT_DIR$/src/configuration.h" />
         <option value="$PROJECT_DIR$/src/interpolation.cpp" />
+        <option value="$PROJECT_DIR$/src/ik.cpp" />
       </list>
     </option>
   </component>
@@ -346,12 +346,12 @@
       <workItem from="1524909343279" duration="4734000" />
       <workItem from="1525011396473" duration="1427000" />
       <workItem from="1526127722313" duration="899000" />
-      <workItem from="1528470293204" duration="3855000" />
+      <workItem from="1528470293204" duration="7138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95452000" />
+    <option name="totallyTimeSpent" value="98735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -730,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ik.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="338">
+          <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
           <folding />
         </state>
       </provider>
