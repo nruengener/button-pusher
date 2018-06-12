@@ -1,3 +1,5 @@
+import time
+
 import cv2
 
 from pytesseract import pytesseract, Output
@@ -14,6 +16,8 @@ def find_target(boxes, image, label):
     for box in boxes:
         roi = image[box[1]:box[1] + box[3], box[0]:box[0] + box[2]]
 
+        start = time.time()
+
         # preprocess region of interest
         img_preprocessed = image_processing.process_image(roi)
 
@@ -24,6 +28,9 @@ def find_target(boxes, image, label):
         tokens = filter_tokens(tokens, img_preprocessed)
         if TRACE:
             print("#filtered: ", len(tokens))
+
+        end = time.time()
+        print("time taken for tokens including preprocessing: ", end - start)
 
         if TRACE:
             for t in tokens:

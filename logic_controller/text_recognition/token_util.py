@@ -42,7 +42,7 @@ def filter_tokens(tokens, image_np):
                 break
 
         if remove:
-            filtered.remove(t)  # todo: possible? check if concurrent ex... else use second list
+            filtered.remove(t)  # todo: possible? check if concurrent exception else use second list
 
     # filtered = sorted(filtered, key=lambda token: token[0])
     return sorted(filtered, key=lambda token: token[0])
