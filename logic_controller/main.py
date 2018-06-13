@@ -41,6 +41,9 @@ def init():
     # serial communication with Arduino
     serial_communication.init_communication()
     serial_communication.read_all()  # clear on start
+    im = tracker.get_current_frame()
+    imr = resize_to_width(im.copy(), 800, True)
+    id, b = detector.detect_buttons(imr)
 
 
 # shutdown all handles
@@ -59,6 +62,7 @@ if __name__ == '__main__':
 
     while True:
         try:
+            # todo: led for ready state
             # wait for user input
             # keypad.start_input()
             # print("waiting for user input")

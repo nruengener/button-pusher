@@ -53,6 +53,7 @@ def find_target(boxes, image, label):
             if TRACE:
                 print("data['conf']: ", data['conf'])
 
+            # add if confidence > 60
             if data['conf'][len(data['conf']) - 1] > 60:
                 text = text + data['text'][len(data['conf']) - 1]
 
