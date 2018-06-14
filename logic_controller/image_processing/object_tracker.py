@@ -1,3 +1,4 @@
+import time
 from threading import Thread
 
 import cv2
@@ -131,6 +132,7 @@ class FeatureTracker:
     def update(self):
         """ update tracker with frame from video stream. keep looping infinitely until the thread is stopped """
         self.frame = self.vs.read()
+        start = time.time()
         self.ok, polygon = match_keypoints_to_polygon(self.roi, self.frame)
         if not self.ok:
             return
@@ -140,6 +142,8 @@ class FeatureTracker:
         # print("polygon.reshape((1, 8): ", polygon.reshape((1, 8))[0])
         # self.bbox = cv2.minAreaRect(polygon.reshape((1, 8))[0])
         self.bbox = bounding_box_for_polygon(polygon)
+        end = time.time()
+        print("tracking time taken for one frame: ", end - start)
         # print("bbox: ", self.bbox)
         # self.roi = self.frame[self.bbox[1]:self.bbox[1] + self.bbox[3], self.bbox[0]:self.bbox[0] + self.bbox[2]]
         # cv2.imshow('bbox', self.roi)

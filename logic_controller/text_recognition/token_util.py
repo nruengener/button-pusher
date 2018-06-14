@@ -24,6 +24,9 @@ def filter_tokens(tokens, image_np):
         if w * h > area * area_factor:
             continue
 
+        if h > height * 0.9:
+            continue
+
         # sort out if token too small  # todo: use height instead?
         # if w * h < area * 0.03:
         if h < height * 0.3:
@@ -37,12 +40,14 @@ def filter_tokens(tokens, image_np):
     for t in filtered:
         remove = False
         for to in filtered:
-            if box_contains_box(t, to):
-                remove = True
-                break
-
-        if remove:
-            filtered.remove(t)  # todo: possible? check if concurrent exception else use second list
+            if token_contains_token(t, to):
+                print("box in box")
+                filtered.remove(to)
+        #         remove = True
+        #         break
+        #
+        # if remove:
+        #     filtered.remove(t)  # todo: possible? check if concurrent exception else use second list
 
     # filtered = sorted(filtered, key=lambda token: token[0])
     return sorted(filtered, key=lambda token: token[0])
@@ -68,3 +73,10 @@ def contains(r1, r2):
 def box_contains_box(b1, b2):
     """ Returns true if b1 contains b2 """
     return b1[0] < b2[0] < b2[0] + b2[2] < b1[0] + b1[2] and b1[1] < b2[1] < b2[1] + b2[3] < b1[1] + b1[3]
+
+
+def token_contains_token(b1, b2):
+    """ Returns true if b1 contains b2 """
+    # w = t[2] - t[0]
+    # h = t[3] - t[1]
+    return b1[0] < b2[0] < b2[2] < b1[2] and b1[1] < b2[1] < b2[3] < b1[3]
