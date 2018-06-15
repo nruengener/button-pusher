@@ -41,10 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="robotArm.ino" pinned="false" current-in-tab="false">
+      <file leaf-file-name="robotArm.ino" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/robotArm.ino">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
+            <state relative-caret-position="-362">
               <caret line="97" column="18" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -53,31 +53,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RampsStepper.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RampsStepper.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="robotGeometry.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/robotGeometry.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="690">
               <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="command.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="command.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="2533">
               <caret line="149" column="13" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="command.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/command.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-56">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/configuration.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="endstop.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/endstop.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fk.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fk.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interpolation.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpolation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-753">
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interpolation.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpolation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2210">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="endstop.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/endstop.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -316,14 +378,16 @@
       <workItem from="1526127722313" duration="899000" />
       <workItem from="1528470293204" duration="9628000" />
       <workItem from="1528630895644" duration="1835000" />
+      <workItem from="1529054724231" duration="1665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103060000" />
+    <option name="totallyTimeSpent" value="104725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -518,13 +582,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gripper.cpp" />
     <entry file="file://$PROJECT_DIR$/src/fanControl.h" />
-    <entry file="file://$PROJECT_DIR$/src/endstop.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoavr/cores/arduino/Print.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -561,14 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fk.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pinout_ramps.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -597,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/endstop.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/queue.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -629,55 +671,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/robotGeometry.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configuration.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RampsStepper.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robotArm.ino">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="18" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpolation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpolation.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,19 +687,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/robotGeometry.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/command.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-56">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/endstop.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/command.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="2533">
           <caret line="149" column="13" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configuration.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/endstop.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fk.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpolation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpolation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2210">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robotArm.ino">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-362">
+          <caret line="97" column="18" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
