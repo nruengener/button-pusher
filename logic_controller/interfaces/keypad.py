@@ -27,6 +27,11 @@ class KeyPad:
     def key_pressed(self, key):
         # print("key: ", key)
         try:
+            # reset input if '*' pressed
+            if key == '*':
+                self.input = ""
+                return
+
             int_key = int(key)
             if self.accepting and 0 <= int_key <= 9:
                 self.input = self.input + str(key)
