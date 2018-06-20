@@ -91,7 +91,7 @@ if __name__ == '__main__':
             # enable motors before cam to get a stable first image
             print(serial_communication.write("M17"))
             # move to allow sideway movement to determine distance
-            movement.move_cartesian(0, 20, 15)
+            movement.move_cartesian(0, 20, 15, 20)
             time.sleep(.4)
 
             # image = vs.read()
@@ -102,7 +102,6 @@ if __name__ == '__main__':
                 cv2.imshow('start image', img_resized)
 
             # detect buttons in image
-            # todo: resize image
             start = time.time()
             image_detected, boxes = detector.detect_buttons(img_resized)
             end = time.time()
@@ -127,18 +126,8 @@ if __name__ == '__main__':
             end = time.time()
             print("[INFO] OCR took {:.5} seconds".format(end - start))
 
-            # if target is None:
-            #     boxes_ocr = recognize_text_in_boxes(boxes, image)
-            #     for (box, text) in boxes_ocr:
-            #         if text == input_string:
-            #             target = box
-            #             break
-
             if target is None:
                 print("Could not find button with ", input_string, " as label")
-                # # todo: break outer loop instead of exit
-                # cv2.waitKey(0)
-                # exit(0)
                 movement.move_home()
                 serial_communication.write("M18")
                 continue
@@ -150,6 +139,7 @@ if __name__ == '__main__':
 
             # move to home position
             movement.move_home()
+            time.sleep(0.7)
 
             #  disable motors
             serial_communication.write("M18")

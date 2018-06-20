@@ -30,8 +30,10 @@
 #define LENGTH_GRIPPER 88.0  // 87
 
 #define START_X 0
-#define START_Y 146 // best: 146 and 66    142    // 140
-#define START_Z 66  // 63         //  55
+//#define START_Y 146 // best: 146 and 66    142    // 140
+//#define START_Z 66  // 63         //  55
+#define START_Y 140 // best: 146 and 66    142    // 140
+#define START_Z 60  // 63         //  55
 
 #define START_ANGLE_LOW 2.23
 #define START_ANGLE_HIGH -0.37

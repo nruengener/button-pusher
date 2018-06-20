@@ -93,7 +93,7 @@ class Movement:
             self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
             return True
 
-        # move part of the way
+        # move part of the way (not used at the moment)
         dx3 = dx / 3  # leave for case of always using stop
         dy3 = dy / 3
         dz3 = dz / 3 + (DIST_ENDSTOP_CAM_Z * 1000 / 3)
@@ -147,15 +147,18 @@ class Movement:
             return True, 0, 0, 0
 
         # todo: move result (e.g. moving error, timeout ...) and return False if no success
-        self.move_cartesian(x1, 0, z1, 50)
+        self.move_cartesian(x1, 0, z1, 20)
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()
         if not ok:
             print("Tracking Error")
             return False, 0, 0, 0
 
-        x1 = 0.9 * x1  # failure in movement (bias?)
+        x1 = 0.9 * x1  # failure in movement (bias)
         z1 = 0.9 * z1
+        # x1 = 0.75 * x1  # failure in movement (bias)
+        # z1 = 0.75 * z1
+
         x_cam = x1 * (DIST_CAM_BASE_START / (DIST_CAM_BASE_START + DIST_ENDSTOP_CAM))
         print("x1: ", x1, ", x_cam: ", x_cam)
 
@@ -171,8 +174,10 @@ class Movement:
         if abs(angle_to_ver2 - angle_to_ver1) < TOLERANCE_RAD:
             x2 = 0
         else:
-            x2c = x1 * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
+            # x2c = x1 * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
+            x2c = x_cam * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
             x2 = x2c - (x1 - x_cam)
+            print("x2c: ", x2c, ", x2: ", x2)
 
         # as the camera does not turn on z axis there is no need to calculate a different angle here
         if abs(angle_to_hor2 - angle_to_hor1) < TOLERANCE_RAD:
@@ -182,7 +187,7 @@ class Movement:
         # if angle_to_hor2 < 0:
         #         z2 = -z2
 
-        y = abs((x1 + x2) / math.tan(angle_to_ver1)) if abs(angle_to_ver1) > 0 else 0
+        y = abs((x1 + x2) / math.tan(angle_to_ver1)) - DIST_ENDSTOP_CAM if abs(angle_to_ver1) > 0 else 0
         y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if abs(angle_to_hor1) > 0 else 0
         if y == 0:
             y = y_z
