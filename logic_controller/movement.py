@@ -132,6 +132,7 @@ class Movement:
     def move_sideways(self):
         """ Try to determine the distance to the target by moving the arm sideways.
         Returns the remaining distances on the axes. """
+        print("focal pixel length: ", focal_pixel)
         angle_to_ver1, angle_to_hor1 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
         # first move by a defined distance on  x and z axis
         if -TOLERANCE_RAD < angle_to_ver1 < TOLERANCE_RAD:
