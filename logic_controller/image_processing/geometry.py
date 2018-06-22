@@ -1,7 +1,7 @@
 import math
 import numpy as np
 
-from config import PIXEL_SIZE, CAMERA_WIDTH, CAMERA_HEIGHT
+from config import PIXEL_SIZE, CAMERA_WIDTH, CAMERA_HEIGHT, HFOV
 
 
 def calculate_angles_from_center_p(image_np, x, y, f):
@@ -29,10 +29,17 @@ def calculate_angles_from_center(image_np, bbox, f):
     f is the focal length in pixels """
     x, y = (bbox[0] + bbox[2] / 2, bbox[1] + bbox[3] / 2)
     h, w, d = image_np.shape
+
     center = np.array([0, 0, f])
     pixel_hor = np.array([x - w / 2, 0, f])  # ([x - w/2, y - h/2, f])
     dot = np.dot(center, pixel_hor)
     angle_to_ver = math.acos(dot / (length(center) * length(pixel_hor)))
+    print("angle with vectors: ", angle_to_ver)
+
+    # method from bachelor thesis:
+    # alpha = math.atan(math.tan(math.radians(HFOV/2)) * abs(x - w / 2) / (w / 2))
+    # print("angle with hfov: ", alpha)
+
     if x < w / 2:
         angle_to_ver = -angle_to_ver
 
