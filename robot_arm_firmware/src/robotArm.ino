@@ -76,14 +76,14 @@ void loop() {
     // set home position if endtops reached
     if (checkEndstop()) {
         printEndstopReached();
-        int res = interpolator.setInterpolation(START_X, START_Y, START_Z, 0, 0);
-        if (res > 0) {
-            printFault();
-        }
-        // todo: empty command queue?
-        while (!queue.isEmpty()) {
-            queue.pop();
-        }
+//        int res = interpolator.setInterpolation(START_X, START_Y, START_Z, 0, 0);
+//        if (res > 0) {
+//            printFault();
+//        }
+//        // todo: empty command queue?
+//        while (!queue.isEmpty()) {
+//            queue.pop();
+//        }
 //        return;
     }
 

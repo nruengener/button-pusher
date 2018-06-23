@@ -78,21 +78,32 @@ if __name__ == '__main__':
 
             # todo: led for ready state
             # wait for user input
-            # keypad.start_input()
-            # print("waiting for user input")
-            # while not keypad.input_finished():
-            #     time.sleep(0.1)
-            #
-            # input_string = keypad.get_input()
-            # input_number = int(input_string)
-            # print("number entered: ", input_number)
-            input_string = "0"
+            keypad.start_input()
+            print("waiting for user input")
+            while not keypad.input_finished():
+                time.sleep(0.1)
+
+            input_string = keypad.get_input()
+            input_number = int(input_string)
+            print("number entered: ", input_number)
+            # input_string = "0"
 
             # enable motors before cam to get a stable first image
             print(serial_communication.write("M17"))
+            time.sleep(.1)
+            movement.move_cartesian(0, 2, 1, 10)
+            time.sleep(.2)
+
             # move to allow sideway movement to determine distance
-            movement.move_cartesian(0, 20, 15, 20)
+            movement.move_cartesian(0, 20, 15, 30)
+            # movement.move_cartesian(0, 20, 0, 20)
+            # time.sleep(2.4)
+            # movement.move_cartesian(0, 0, 25, 20)
             time.sleep(.4)
+
+            # movement.move_absolute(0, 235, 135, 40)
+            # time.sleep(3)
+            # print(serial_communication.write("M18"))
 
             # image = vs.read()
             image = tracker.get_current_frame()
@@ -136,10 +147,11 @@ if __name__ == '__main__':
             ok = movement.move_to_target(image, target)
             if not ok:
                 print("Could not move to target")
+            time.sleep(0.2)
 
             # move to home position
             movement.move_home()
-            time.sleep(0.7)
+            time.sleep(0.8)
 
             #  disable motors
             serial_communication.write("M18")

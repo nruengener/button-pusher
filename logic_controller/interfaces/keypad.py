@@ -1,3 +1,4 @@
+import time
 from pad4pi import rpi_gpio
 
 KEYPAD = [
@@ -15,10 +16,11 @@ COL_PINS = [17, 27, 22]  # BCM numbering
 
 class KeyPad:
     """Class for reading keypad inputs """
-    def __init__(self, timeout=2):
+    def __init__(self, timeout=5):
         self.timeout = timeout
         self.input = ""
         self.accepting = False
+        self.last_time = 0
         factory = rpi_gpio.KeypadFactory()
         self.keypad = factory.create_keypad(keypad=KEYPAD, row_pins=ROW_PINS, col_pins=COL_PINS)
         # printKey will be called each time a keypad button is pressed
@@ -27,6 +29,13 @@ class KeyPad:
     def key_pressed(self, key):
         # print("key: ", key)
         try:
+            # reset input if no button pressed for 5 sec
+            current_time = time.time()
+            if current_time - self.last_time > self.timeout:
+                self.input = ""
+
+            self.last_time = current_time
+
             # reset input if '*' pressed
             if key == '*':
                 self.input = ""
