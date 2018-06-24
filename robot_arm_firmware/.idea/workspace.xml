@@ -135,9 +135,11 @@
       <find>f</find>
       <find>fca</find>
       <find>call</find>
+      <find>ovf</find>
     </findStrings>
     <dirStrings>
       <dir>G:\workspace\tobler_arm_arduino\src</dir>
+      <dir>G:\workspace\button_pusher\robot_arm_firmware\src</dir>
     </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -354,12 +356,12 @@
       <workItem from="1529482937724" duration="8000" />
       <workItem from="1529490343709" duration="2057000" />
       <workItem from="1529493594876" duration="3975000" />
-      <workItem from="1529749123497" duration="4159000" />
+      <workItem from="1529749123497" duration="4704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118523000" />
+    <option name="totallyTimeSpent" value="119068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
