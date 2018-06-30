@@ -62,20 +62,6 @@ if __name__ == '__main__':
 
     while True:
         try:
-            # test reproduction / movement
-            # print(serial_communication.write("M17"))
-            # time.sleep(.2)
-            # for x in range(0, 3):
-            #     movement.move_cartesian(0, 20, 15)
-            #     time.sleep(2)
-            #     movement.move_cartesian(0, 150, 0)
-            #     time.sleep(2)
-            #     movement.move_home()
-            #     time.sleep(.5)
-            #
-            # serial_communication.write("M18")
-            # exit(0)
-
             # todo: led for ready state
             # wait for user input
             keypad.start_input()
@@ -92,7 +78,7 @@ if __name__ == '__main__':
             print(serial_communication.write("M17"))
             time.sleep(.1)
             movement.move_cartesian(0, 2, 1, 10)
-            time.sleep(.2)
+            time.sleep(.1)
 
             # move to allow sideway movement to determine distance
             movement.move_cartesian(0, 20, 15, 30)

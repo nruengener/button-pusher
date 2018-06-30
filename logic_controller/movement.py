@@ -112,8 +112,8 @@ class Movement:
             dy = 60
         else:
             # move directly to target
-            if dy < 165:
-                dy = dy + 5
+            if dy < 160:
+                dy = dy + 3
             self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
             return True
 
@@ -202,7 +202,7 @@ class Movement:
         angle_to_ver_c = angle_to_ver2 + beta
         print("angle from y axis to target after move: ", angle_to_ver_c)
 
-        if abs(angle_to_ver2 - angle_to_ver1) < TOLERANCE_RAD:
+        if abs(angle_to_ver_c) < TOLERANCE_RAD:
             x2 = 0
         else:
             # x2c = x1 * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
@@ -220,7 +220,7 @@ class Movement:
 
         y = abs((x1 + x2) / math.tan(angle_to_ver1)) - DIST_ENDSTOP_CAM if abs(angle_to_ver1) > 0 else 0
         y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if abs(angle_to_hor1) > 0 else 0
-        if y == 0 or x1 == 0:
+        if y == 0 or x1 == 0 or y > 172:
             y = y_z
 
         if y == 0:

@@ -26,7 +26,7 @@
 
 // length of arms in mm (joint to joint)
 #define LENGTH_ARM1 135.0
-#define LENGTH_ARM2 147.0  // 145
+#define LENGTH_ARM2 148.0  // 145
 #define LENGTH_GRIPPER 88.0  // 87
 
 #define START_X 0
@@ -44,7 +44,7 @@
 // cartesian limits
 #define UPPER_LIMIT_X LENGTH_ARM2 + LENGTH_GRIPPER
 #define LOWER_LIMIT_X -(LENGTH_ARM2 + LENGTH_GRIPPER)
-#define UPPER_LIMIT_Y LENGTH_ARM2 + LENGTH_GRIPPER + 103
+#define UPPER_LIMIT_Y LENGTH_ARM2 + LENGTH_GRIPPER + 109
 //#define LOWER_LIMIT_Y START_Y - LENGTH_GRIPPER
 #define LOWER_LIMIT_Y START_Y
 #define UPPER_LIMIT_Z LENGTH_ARM1 + 35
