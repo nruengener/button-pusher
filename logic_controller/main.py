@@ -7,7 +7,7 @@ from RPi import GPIO
 
 from button_detection.button_detector import ButtonDetector
 from button_detection.image_processing import resize_to_width, convert_boxes
-from image_processing.object_tracker import FeatureTracker
+from object_tracking.object_tracker import FeatureTracker
 from image_processing.pi_video_stream import PiVideoStream
 from interfaces import serial_com
 from interfaces.keypad import KeyPad

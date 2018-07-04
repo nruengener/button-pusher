@@ -2,7 +2,7 @@ import time
 
 import cv2
 
-from image_processing.geometry import *
+from geometry_distance.geometry import *
 from config import CAMERA_WIDTH, HFOV, DIST_CAM_BASE, DIST_ENDSTOP_CAM, TOLERANCE_RAD, DIST_ENDSTOP_CAM_Z, F
 
 focal_pixel = (CAMERA_WIDTH * 0.5) / math.tan(HFOV * 0.5 * math.pi / 180)

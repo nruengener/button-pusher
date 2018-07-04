@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 from config import TRACE
-from image_processing import geometry
+from geometry_distance import geometry
 
 MIN_MATCH_COUNT = 3  # 10
 FLANN_INDEX_KDTREE = 0

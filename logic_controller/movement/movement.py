@@ -1,8 +1,6 @@
 import time
 
-import cv2
-
-from image_processing.geometry import *
+from geometry_distance.geometry import *
 from config import CAMERA_WIDTH, HFOV, DIST_CAM_BASE, DIST_ENDSTOP_CAM, TOLERANCE_RAD, DIST_ENDSTOP_CAM_Z, F, \
     DIST_CAM_BASE_START, TRACE, DEBUG
 
@@ -185,15 +183,13 @@ class Movement:
             print("Tracking Error")
             return False, 0, 0, 0
 
+        angle_to_ver2, angle_to_hor2 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
+
         x1 = 0.9 * x1  # failure in movement (bias)
         z1 = 0.95 * z1
-        # x1 = 0.75 * x1  # failure in movement (bias)
-        # z1 = 0.75 * z1
 
         x_cam = x1 * (DIST_CAM_BASE_START / (DIST_CAM_BASE_START + DIST_ENDSTOP_CAM))
         print("x1: ", x1, ", x_cam: ", x_cam)
-
-        angle_to_ver2, angle_to_hor2 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
 
         # angle that base has turned
         beta = math.atan2(x_cam, DIST_CAM_BASE_START * 1000)
