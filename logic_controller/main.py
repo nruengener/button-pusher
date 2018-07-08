@@ -7,19 +7,19 @@ from RPi import GPIO
 
 from button_detection.button_detector import ButtonDetector
 from button_detection.image_processing import resize_to_width, convert_boxes
+from config import DEBUG
+from interfaces.led import led_control
+from movement.movement import Movement
 from object_tracking.object_tracker import FeatureTracker
 from image_processing.pi_video_stream import PiVideoStream
 from interfaces import serial_com
 from interfaces.keypad import KeyPad
-from movement import Movement
 from text_recognition.text_processing import find_target
 
 GPIO.setwarnings(False)
 
 print("OpenCV version: ", cv2.__version__)
 print(platform.python_version())
-
-DEBUG = True
 
 serial_communication = serial_com.SerialCom('/dev/ttyACM0', 9600)
 
@@ -39,6 +39,7 @@ keypad = KeyPad()
 
 def init():
     # serial communication with Arduino
+    led_control("green", "off")
     serial_communication.init_communication()
     serial_communication.read_all()  # clear on start
     im = tracker.get_current_frame()
@@ -62,7 +63,12 @@ if __name__ == '__main__':
 
     while True:
         try:
+            time.sleep(3)
             # todo: led for ready state
+            led_control("green", "off")
+            time.sleep(0.1)
+            led_control("green", "on")
+            # led_control("red", "on")
             # wait for user input
             keypad.start_input()
             print("waiting for user input")
@@ -73,6 +79,7 @@ if __name__ == '__main__':
             input_number = int(input_string)
             print("number entered: ", input_number)
             # input_string = "0"
+            led_control("green", "flash")
 
             # enable motors before cam to get a stable first image
             print(serial_communication.write("M17"))
@@ -110,6 +117,7 @@ if __name__ == '__main__':
                 print("No buttons detected")
                 movement.move_home()
                 serial_communication.write("M18")
+                led_control("green", "heartbeat")
                 continue
 
             # resize boxes
@@ -127,12 +135,14 @@ if __name__ == '__main__':
                 print("Could not find button with ", input_string, " as label")
                 movement.move_home()
                 serial_communication.write("M18")
+                led_control("green", "heartbeat")
                 continue
 
             print("selected bbox: ", target)
             ok = movement.move_to_target(image, target)
             if not ok:
                 print("Could not move to target")
+                led_control("green", "heartbeat")
             time.sleep(0.2)
 
             # move to home position
@@ -151,9 +161,11 @@ if __name__ == '__main__':
 
         finally:
             serial_communication.write("M18")  # disable motors in case of exception due to overheating
+            led_control("green", "off")
 
     #  disable motors
     serial_communication.write("M18")
     shutdown()
+    led_control("green", "off")
     print("exiting...")
 

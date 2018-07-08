@@ -151,7 +151,8 @@ def match_keypoints(img1, img2):
                        flags=2)
 
     img3 = cv2.drawMatches(img1, kp1, img2, kp2, good, None, **draw_params)
-    cv2.imshow("fm", img3)
+    if TRACE:
+        cv2.imshow("fm", img3)
 
     return result_x, result_y
     # plt.imshow(img3, 'gray'), plt.show()

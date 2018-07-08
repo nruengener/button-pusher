@@ -15,7 +15,8 @@ def find_target(boxes, image, label):
     """ Detect the box with the given label """
     for box in boxes:
         roi = image[box[1]:box[1] + box[3], box[0]:box[0] + box[2]]
-        cv2.imshow('orig ' + str(j), roi)
+        if DEBUG:
+            cv2.imshow('orig ' + str(j), roi)
 
         start = time.time()
 

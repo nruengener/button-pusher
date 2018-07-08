@@ -7,6 +7,7 @@ from image_processing.pi_video_stream import PiVideoStream
 
 vs = PiVideoStream()
 
+
 def run_main():
 
     vs.start()
