@@ -1,7 +1,7 @@
 # Elevator Button Pushing System
 This project contains the software for a sample mechatronic assistance system which tries to recognize and push elevator buttons.
-Control of the used robot arm is to be found in the project 'robot_control???', the main control routine which contains image processing and detection logic is
-contained in the project '???'.
+Control of the used robot arm is to be found in the project 'robot_arm_firmware', the main control routine which contains image processing and detection logic is
+contained in the project 'logic_controller'.
 
 ## Robot Control
 The software is meant to be executed on an Arduino UNO which is connected to a CNC Shield.
