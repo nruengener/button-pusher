@@ -4,18 +4,23 @@ There are two separate folders for the firmware of the used robot arm written in
 
 
 ## Introduction (Motivation)
+warum entwickelt, wozu, Ziel
 
 ## Function
-
-## Examples
+was kann er
 
 ## Results
+Fakten Zahlen
+
+## Examples
+Bilder Videos
 
 ## Todos / further requirements
+Was noch nicht behandelt, was muss verbessert werden
 
 ## License
 
-## How To
+## How To (?)
 
 
 
