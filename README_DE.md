@@ -6,7 +6,11 @@ für die Bildverarbeitung zuständig ist. Details zur Konzeption und Umsetzung fin
 ## Motivation
 Für Menschen mit Behinderung (Handicap?) können scheinbar alltägliche Aufgaben zu einer großen Herausforderung werden. So ist es für Menschen mit 
 eingeschränkter Motorik der Finger, Hände und Arme schwierig, aus einem Glas zu trinken oder ein Buch aus einem Regal zu nehmen. Technische Assistenzsysteme, 
-wie z. B.ein auf einen Rollstuhl montierter Roboterarm sollen hier Abhilfe schaffen.
+wie z. B. ein auf einen Rollstuhl montierter Roboterarm sollen hier Abhilfe schaffen. Werden diese Systeme allerdings direkt gesteuert, bspw. mittels Joystick, 
+können Alltagshandlungen immernoch sehr langwierig sein.
+
+In letzter Zeit findet zunehmend Forschung an teilautonomen Assistenzsystemen statt, welche einzelne Handlungsschritte und Bewegungsabläufe automatisieren.
+In diesem Projekt soll ein Prototyp für ein solches System
 
 ... in letzter Zeit Forschung ...
 
