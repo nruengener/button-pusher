@@ -1,7 +1,16 @@
 <p align="center">
   <span>English</span> |
-  <a href="https://github.com/alvarotrigo/fullPage.js/tree/master/lang/spanish#fullpagejs">EspaÃ±ol</a> |
+  <a href="https://github.com/alvarotrigo/fullPage.js/tree/master/lang/spanish#fullpagejs">Español</a> |
   [Deutsch](README_DE.md)
+</p>
+
+<p align="center">
+  <b>English</b><br>
+  <a href="README_DE.md">Deutsch</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="http://s.4cdn.org/image/title/105.gif">
 </p>
 
 # Button Pusher
