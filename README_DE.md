@@ -14,8 +14,11 @@ In diesem Projekt soll ein Prototyp für ein solches System für die Funktion der 
 
 ## Beispiel
 
-...
+... Video(s) und Foto(?)
 
 ## Komponenten
-Als Roboterarm wird ein Modell eines ABB... mit Schrittmotoren verwendet (Link), welches eine Abwandlung von ...Link ist. Die Steuerung bzw. Firmware für den Arm basiert auf ...
-Eine detaillierte Liste der verwendeten Komponenten ist in ... zu finden
+Als Roboterarm wird ein Modell eines ABB IRB 460 mit Schrittmotoren verwendet (https://www.thingiverse.com/thing:2520572 von Nutzer jackyltle, Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode),
+welches eine Abwandlung des EEZYbotARM MK2 (https://www.thingiverse.com/thing:1454048 von Nutzer daGHIZmo, Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode) ist.
+Die Steuerung bzw. Firmware für den Arm basiert auf https://github.com/ftobler/robotArm (Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode).
+
+Eine detaillierte Liste der verwendeten Komponenten ist in ... zu finden.
