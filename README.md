@@ -1,21 +1,10 @@
-English | [Deutsch](README_DE.md)
+English | [Deutsch](README_DE.md)  
 TODO: no full html on bitbucket
 <p align="center">
   <b>English</b><br>
   <a href="README_DE.md">Deutsch</a> |
-  <a href="#">Link 2</a> |
-  <a href="#">Link 3</a>
+  <a href="#">Link 2</a>
 </p>
-
-<p align="justify">
-  Lorem ipsum
-</p>
-
-<div align="center">
-  my text here.
-</div>
-
-# Example text {style=text-align:center}
 
 # Button Pusher
 The button pusher is a (very early) prototype of a robotic arm, which recognizes and pushes a desired elevator button.
