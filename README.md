@@ -6,6 +6,16 @@ TODO: no full html on bitbucket
   <a href="#">Link 3</a>
 </p>
 
+<p align="justify">
+  Lorem ipsum
+</p>
+
+<div align="center">
+  my text here.
+</div>
+
+# Example text {style=text-align:center}
+
 # Button Pusher
 The button pusher is a (very early) prototype of a robotic arm, which recognizes and pushes a desired elevator button.
 There are two separate folders for the firmware of the used robot arm written in C/C++ and the logic of the main controller written in Python.
