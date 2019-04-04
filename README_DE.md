@@ -1,7 +1,7 @@
 # Button Pusher    
 Der Button Pusher ist ein (sehr früher) Prototyp eines Roboterarms, welcher mit Hilfe von Methoden der KI Fahrstuhlknöpfe erkennt und betätigt.
 Es existieren zwei separate Ordner für die in C / C ++ geschriebene Firmware des verwendeten Roboterarms sowie die in Python geschriebene Logik des Hauptcontrollers, der auch
-für die Bildverarbeitung zuständig ist. Details zur Motivation, Konzeption und Umsetzung finden sich in der [Ausarbeitung](Ausarbeitung.docx).
+für die Bildverarbeitung zuständig ist. Details zur Motivation, Konzeption und Umsetzung finden sich in der [Ausarbeitung](Ausarbeitung.pdf).
 
 ## Motivation
 Für Menschen mit Behinderung können scheinbar alltägliche Aufgaben zu einer großen Herausforderung werden. So ist es für Menschen mit 
@@ -21,4 +21,4 @@ Als Roboterarm wird ein Modell eines ABB IRB 460 mit Schrittmotoren verwendet (h
 welches eine Abwandlung des EEZYbotARM MK2 (https://www.thingiverse.com/thing:1454048 von Nutzer daGHIZmo, Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode) ist.
 Die Steuerung bzw. Firmware für den Arm basiert auf https://github.com/ftobler/robotArm (Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode).
 
-Eine detaillierte Liste der verwendeten Komponenten ist in der Ausarbeitung zu finden.
+Eine detaillierte Liste der verwendeten Komponenten ist in der [Ausarbeitung](Ausarbeitung.pdf) zu finden.
