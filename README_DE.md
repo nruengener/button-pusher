@@ -3,7 +3,7 @@ Der Button Pusher ist ein (sehr früher) Prototyp eines Roboterarms, welcher mit 
 Es existieren zwei separate Ordner für die in C / C ++ geschriebene Firmware des verwendeten Roboterarms sowie die in Python geschriebene Logik des Hauptcontrollers, der auch 
 für die Bildverarbeitung zuständig ist. Details zur Motivation, Konzeption und Umsetzung finden sich in der [Ausarbeitung](Ausarbeitung.pdf).
 
-*Read this in other languages: [English](README.md), [Deutsch](README_DE.md).*
+*Andere Sprachen: [English](README.md), [Deutsch](README_DE.md).*
 
 ## Motivation
 Für Menschen mit Behinderung können scheinbar alltägliche Aufgaben zu einer großen Herausforderung werden. So ist es für Menschen mit 
