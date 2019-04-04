@@ -1,3 +1,5 @@
+Deutsch | [English](README.md)
+
 # Button Pusher    
 Der Button Pusher ist ein (sehr früher) Prototyp eines Roboterarms, welcher mit Hilfe von Methoden der KI Fahrstuhlknöpfe erkennt und betätigt.
 Es existieren zwei separate Ordner für die in C / C ++ geschriebene Firmware des verwendeten Roboterarms sowie die in Python geschriebene Logik des Hauptcontrollers, der auch 
