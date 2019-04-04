@@ -4,7 +4,7 @@ Es existieren zwei separate Ordner für die in C / C ++ geschriebene Firmware des
 für die Bildverarbeitung zuständig ist. Details zur Motivation, Konzeption und Umsetzung finden sich in ...
 
 ## Motivation
-Für Menschen mit Behinderung (Handicap?) können scheinbar alltägliche Aufgaben zu einer großen Herausforderung werden. So ist es für Menschen mit 
+Für Menschen mit Behinderung können scheinbar alltägliche Aufgaben zu einer großen Herausforderung werden. So ist es für Menschen mit 
 eingeschränkter Motorik der Finger, Hände und Arme schwierig, aus einem Glas zu trinken oder ein Buch aus einem Regal zu nehmen. Technische Assistenzsysteme, 
 wie z. B. ein auf einen Rollstuhl montierter Roboterarm sollen hier Abhilfe schaffen. Werden diese Systeme allerdings direkt gesteuert, bspw. mittels Joystick, 
 können Alltagshandlungen immernoch sehr langwierig sein.
@@ -21,4 +21,4 @@ Als Roboterarm wird ein Modell eines ABB IRB 460 mit Schrittmotoren verwendet (h
 welches eine Abwandlung des EEZYbotARM MK2 (https://www.thingiverse.com/thing:1454048 von Nutzer daGHIZmo, Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode) ist.
 Die Steuerung bzw. Firmware für den Arm basiert auf https://github.com/ftobler/robotArm (Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode).
 
-Eine detaillierte Liste der verwendeten Komponenten ist in ... zu finden.
+Eine detaillierte Liste der verwendeten Komponenten ist in der Ausarbeitung zu finden.
