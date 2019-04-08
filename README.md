@@ -28,8 +28,5 @@ The control or firmware for the arm is based on https://github.com/ftobler/robot
 
 A detailed list of the components used can be found in the [elaboration](Ausarbeitung.pdf) (only german version available).
 
-## License
-
-
 
 
