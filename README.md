@@ -9,6 +9,8 @@ TODO: no full html on bitbucket
 The button pusher is a (very early) prototype of a robotic arm, which recognizes and pushes a desired elevator button with the help of AI methods.
 There are two separate folders, one for the firmware of the used robot arm written in C/C++ and the other for the logic of the main controller written in Python.
 
+Details on motivation, conception and implementation can be found in the [elaboration](Ausarbeitung.pdf) (only german version available).
+
 *Read this in other languages: [Deutsch](README_DE.md), [English](README.md).*
 
 ## Introduction (Motivation)
