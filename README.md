@@ -24,7 +24,7 @@ was kann er
 ## Components
 The robot arm used is a model of an ABB IRB 460 with stepper motors (https://www.thingiverse.com/thing:2520572 by user jackyltle, license: https://creativecommons.org/licenses/by-nc/3.0/legalcode),
 which is a modification of the EEZYbotARM MK2 (https://www.thingiverse.com/thing:1454048 by user daGHIZmo, license: https://creativecommons.org/licenses/by-nc/3.0/legalcode). 
-The control or firmware for the arm is based on https://github.com/ftobler/robotArm (license: https://creativecommons.org/licenses/by-nc/3.0/legalcode).
+The control or firmware for the arm is partly based on https://github.com/ftobler/robotArm (license: https://creativecommons.org/licenses/by-nc/3.0/legalcode).
 
 A detailed list of the components used can be found in the [elaboration](Ausarbeitung.pdf) (only german version available).
 
