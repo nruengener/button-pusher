@@ -20,7 +20,9 @@ In diesem Projekt soll ein Prototyp für ein solches System für die Funktion der 
 ... Video(s) und Foto(?)
 Ein Beispiel für die Detektion von Tastern ist hier zu sehen:
 
-![Tasterdetektion](examples/tasterdetektion1.jpg)
+![Tasterdetektion](examples/tasterdetektion1.jpg) ![Tasterdetektion2](examples/tasterdetektion2.jpg)
+
+bla
 
 ## Komponenten
 Als Roboterarm wird ein Modell eines ABB IRB 460 mit Schrittmotoren verwendet (https://www.thingiverse.com/thing:2520572 von Nutzer jackyltle, Lizenz: https://creativecommons.org/licenses/by-nc/3.0/legalcode),
