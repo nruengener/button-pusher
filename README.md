@@ -9,7 +9,6 @@ Details on motivation, conception and implementation can be found in the [elabor
 *Read this in other languages: [Deutsch](README_DE.md), [English](README.md).*
 
 ## Introduction (Motivation)
-warum entwickelt, wozu, Ziel
 For people with disabilities, seemingly everyday tasks can become a major challenge. So it is difficult for people with limited motor 
 skills of the fingers, hands and arms to drink from a glass or to take a book from a shelf. 
 Technical assistance systems, such as a robotic arm mounted on a wheelchair should remedy this situation. 
