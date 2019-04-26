@@ -19,6 +19,7 @@ In diesem Projekt soll ein Prototyp für ein solches System für die Funktion der 
 
 ... Video(s) und Foto(?)
 Ein Beispiel für die Detektion von Tastern ist hier zu sehen:
+
 ![Tasterdetektion](examples/tasterdetektion1.jpg)
 
 ## Komponenten
