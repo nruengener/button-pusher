@@ -24,7 +24,7 @@ Ein Beispiel für die Detektion von Tastern ist hier zu sehen:
 
 Das Modell in Aktion:
 
-[![Watch the video](examples/video_klein.jpg)](https://youtu.be/MIyK-7KVxIM)
+[![Watch the video](examples/video_klein.png)](https://youtu.be/MIyK-7KVxIM)
 
 
 ## Komponenten
