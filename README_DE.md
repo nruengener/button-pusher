@@ -21,7 +21,7 @@ Ein Beispiel für die Detektion von Tastern ist hier zu sehen:
 
 ![Tasterdetektion](examples/tasterdetektion1.jpg) 
 
-Das Modell in Aktion kann im folgenden Video betrachtet werden:
+Das Modell in Aktion kann im folgenden Video betrachtet werden (inklusive Verfehlung des Ziels im letzten Durchgang):
 
 [![Watch the video](examples/video_klein.png)](https://youtu.be/MIyK-7KVxIM)
 
