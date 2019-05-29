@@ -18,7 +18,14 @@ Recently, research on semi-autonomous assistance systems, which automate individ
 In this project, a prototype for such a system for the function of the elevator button operation is to be implemented.
 
 ## Example
-was kann er
+
+The following picture shows an example for the detection of elevator buttons:
+
+![Tasterdetektion](examples/tasterdetektion1.jpg) 
+
+The model in action can be seen in the video below (including a failed position calculation in the last run):
+
+[![Watch the video](examples/video_klein.png)](https://youtu.be/MIyK-7KVxIM)
 
 ## Components
 The robot arm used is a model of an ABB IRB 460 with stepper motors (https://www.thingiverse.com/thing:2520572 by user jackyltle, license: https://creativecommons.org/licenses/by-nc/3.0/legalcode),
