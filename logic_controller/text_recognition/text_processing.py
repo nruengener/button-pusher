@@ -1,3 +1,5 @@
+import time
+
 import cv2
 
 from pytesseract import pytesseract, Output
@@ -13,6 +15,10 @@ def find_target(boxes, image, label):
     """ Detect the box with the given label """
     for box in boxes:
         roi = image[box[1]:box[1] + box[3], box[0]:box[0] + box[2]]
+        if DEBUG:
+            cv2.imshow('orig ' + str(j), roi)
+
+        start = time.time()
 
         # preprocess region of interest
         img_preprocessed = image_processing.process_image(roi)
@@ -25,11 +31,14 @@ def find_target(boxes, image, label):
         if TRACE:
             print("#filtered: ", len(tokens))
 
+        end = time.time()
+        print("time taken for tokens including preprocessing: ", end - start)
+
         if TRACE:
             for t in tokens:
-                cv2.rectangle(img_preprocessed, (t[0], t[1]), (t[2], t[3]), (255, 200, 50), 2)
+                cv2.rectangle(roi, (t[0], t[1]), (t[2], t[3]), (255, 200, 50), 2)
                 global j
-                cv2.imshow('filtered token ' + str(j), img_preprocessed)
+                cv2.imshow('filtered token ' + str(j), roi)
                 j = j + 1
 
         text = ""
@@ -39,13 +48,17 @@ def find_target(boxes, image, label):
             tesseract_img = cv2.cvtColor(tesseract_img, cv2.COLOR_BGR2GRAY)
             ret, tesseract_img = cv2.threshold(tesseract_img, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
+            start = time.time()
             data = pytesseract.image_to_data(tesseract_img,
                                              config="--psm 10 --oem 0 -c tessedit_char_whitelist=01234567890E",
                                              output_type=Output.DICT)  # DICT
+            end = time.time()
+            print("tesseract time taken for one token: ", end - start)
 
             if TRACE:
                 print("data['conf']: ", data['conf'])
 
+            # add if confidence > 60
             if data['conf'][len(data['conf']) - 1] > 60:
                 text = text + data['text'][len(data['conf']) - 1]
 

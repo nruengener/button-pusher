@@ -2,7 +2,7 @@ import time
 
 import cv2
 
-from image_processing.geometry import *
+from geometry_distance.geometry import *
 from config import CAMERA_WIDTH, HFOV, DIST_CAM_BASE, DIST_ENDSTOP_CAM, TOLERANCE_RAD, DIST_ENDSTOP_CAM_Z, F
 
 focal_pixel = (CAMERA_WIDTH * 0.5) / math.tan(HFOV * 0.5 * math.pi / 180)
@@ -204,7 +204,7 @@ class Movement:
             return False
 
         cv2.circle(frame, (x, y), 5, 255, 3)
-        cv2.imshow('tracked center after first turn', frame)
+        # cv2.imshow('tracked center after first turn', frame)
 
         # get new angles to center
         angle_to_ver_new, angle_to_hor_new = calculate_angles_from_center(frame, x, y, focal_pixel)
@@ -258,7 +258,7 @@ class Movement:
         #     return False
         #
         # cv2.circle(new_image, (x, y), 5, 255, 3)
-        cv2.imshow('Finish', frame)
+        # cv2.imshow('Finish', frame)
         time.sleep(1)
         return True
 

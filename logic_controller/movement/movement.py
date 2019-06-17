@@ -1,10 +1,8 @@
 import time
 
-import cv2
-
-from image_processing.geometry import *
+from geometry_distance.geometry import *
 from config import CAMERA_WIDTH, HFOV, DIST_CAM_BASE, DIST_ENDSTOP_CAM, TOLERANCE_RAD, DIST_ENDSTOP_CAM_Z, F, \
-    DIST_CAM_BASE_START, TRACE
+    DIST_CAM_BASE_START, TRACE, DEBUG
 
 focal_pixel = (CAMERA_WIDTH * 0.5) / math.tan(HFOV * 0.5 * math.pi / 180)
 
@@ -34,8 +32,32 @@ class Movement:
             print("received: ", self.serial_communication.read_all())
 
     def move_cartesian(self, xmm, ymm, zmm, speed=0):
-        """ Blocking call which sends a move command to the Arduino and waits for the result if command was accepted """
+        """ Blocking call which sends a relative move command to the Arduino and waits for the result if command was accepted """
         command = 'G1 X{} Y{} Z{} F{}'.format(xmm, ymm, zmm, speed)
+        print("cartesian command: ", command)
+        response = self.serial_communication.write(command).strip()
+        if response == 'ok':
+            response = self.serial_communication.read_until_received("cf", "!!", "er", "or", "rs")
+            if response == 'cf':
+                time.sleep(0.3)
+                return True
+            if response == 'er':
+                print("Endstop reached! Moving to home position.")
+                response = self.serial_communication.read_until_received("cf", "!!", "or")
+                print(response)
+                print("comments received: ", self.serial_communication.read_all())
+                return True
+            print("comments from robot arm: ", self.serial_communication.read_all())
+            print("Command result: ", response)
+            return False
+        else:
+            print("move err response: ", response)
+            print("received: ", self.serial_communication.read_all())
+            return False
+
+    def move_absolute(self, xmm, ymm, zmm, speed=0):
+        """ Blocking call which sends a relative move command to the Arduino and waits for the result if command was accepted """
+        command = 'G0 X{} Y{} Z{} F{}'.format(xmm, ymm, zmm, speed)
         print("cartesian command: ", command)
         response = self.serial_communication.write(command).strip()
         if response == 'ok':
@@ -81,28 +103,34 @@ class Movement:
             print("Tracking Error")
             return False
 
-        h1 = self.bbox[3]
-        b1 = self.bbox[2]
         if dx == 0 and dy == 0 and dz == 0:
             print("not moved because within tolerance of angles")
             dx = 0
             dz = 0
-            dy = 30
+            dy = 60
         else:
             # move directly to target
+            if dy < 160:
+                dy = dy + 3
             self.move_cartesian(dx, dy, dz + DIST_ENDSTOP_CAM_Z * 1000)
             return True
 
-        # move part of the way
+        ok, self.bbox, self.frame = self.tracker.get_current_state()
+        h1 = self.bbox[3]
+        b1 = self.bbox[2]
+
+        # move part of the way (not used at the moment)
         dx3 = dx / 3  # leave for case of always using stop
         dy3 = dy / 3
-        dz3 = dz / 3 + (DIST_ENDSTOP_CAM_Z * 1000 / 3)
+        dz3 = dz / 3  # + (DIST_ENDSTOP_CAM_Z * 1000 / 3)
         self.move_cartesian(dx3, dy3, dz3)
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()
         if not ok:
             print("Tracking Error")
             return False
+
+        dy3 = 0.9 * dy3  # failure in movement (bias)
 
         # calculate distance by change of B
         distance_travelled = distance(dx3, dy3, dz3)
@@ -112,8 +140,8 @@ class Movement:
         g2 = calc_g2(distance_travelled, h1, h2)
         d_xyz = g2 + distance_travelled
 
-        if TRACE:
-            print("h1: ", h1, ", h2: ", h2)
+        if DEBUG:
+            print("h1: ", h1, ", h2: ", h2, ", h1 / (h2 - h1): ", h1 / (h2 - h1))
             print("distance_travelled: ", distance_travelled)
             print("g2: ", g2)
             print("rest distance (to cam): ", distance(dx, dy, dz))
@@ -126,11 +154,13 @@ class Movement:
         if TRACE:
             print("new x: ", x, ", y: ", y, ", z: ", z)
         self.move_cartesian(x, y, z)
+        # todo: stop tracker
         return True
 
     def move_sideways(self):
         """ Try to determine the distance to the target by moving the arm sideways.
         Returns the remaining distances on the axes. """
+        print("focal pixel length: ", focal_pixel)
         angle_to_ver1, angle_to_hor1 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
         # first move by a defined distance on  x and z axis
         if -TOLERANCE_RAD < angle_to_ver1 < TOLERANCE_RAD:
@@ -146,19 +176,20 @@ class Movement:
             return True, 0, 0, 0
 
         # todo: move result (e.g. moving error, timeout ...) and return False if no success
-        self.move_cartesian(x1, 0, z1, 50)
+        self.move_cartesian(x1, 0, z1, 20)
 
         ok, self.bbox, self.frame = self.tracker.get_current_state()
         if not ok:
             print("Tracking Error")
             return False, 0, 0, 0
 
-        x1 = 0.9 * x1  # failure in movement (bias?)
-        z1 = 0.9 * z1
+        angle_to_ver2, angle_to_hor2 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
+
+        x1 = 0.9 * x1  # failure in movement (bias)
+        z1 = 0.95 * z1
+
         x_cam = x1 * (DIST_CAM_BASE_START / (DIST_CAM_BASE_START + DIST_ENDSTOP_CAM))
         print("x1: ", x1, ", x_cam: ", x_cam)
-
-        angle_to_ver2, angle_to_hor2 = calculate_angles_from_center(self.frame, self.bbox, focal_pixel)
 
         # angle that base has turned
         beta = math.atan2(x_cam, DIST_CAM_BASE_START * 1000)
@@ -167,11 +198,13 @@ class Movement:
         angle_to_ver_c = angle_to_ver2 + beta
         print("angle from y axis to target after move: ", angle_to_ver_c)
 
-        if abs(angle_to_ver2 - angle_to_ver1) < TOLERANCE_RAD:
+        if abs(angle_to_ver_c) < TOLERANCE_RAD:
             x2 = 0
         else:
-            x2c = x1 * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
+            # x2c = x1 * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
+            x2c = x_cam * math.tan(angle_to_ver_c) / (math.tan(angle_to_ver1) - math.tan(angle_to_ver_c))
             x2 = x2c - (x1 - x_cam)
+            print("x2c: ", x2c, ", x2: ", x2)
 
         # as the camera does not turn on z axis there is no need to calculate a different angle here
         if abs(angle_to_hor2 - angle_to_hor1) < TOLERANCE_RAD:
@@ -181,9 +214,9 @@ class Movement:
         # if angle_to_hor2 < 0:
         #         z2 = -z2
 
-        y = abs((x1 + x2) / math.tan(angle_to_ver1)) if abs(angle_to_ver1) > 0 else 0
+        y = abs((x1 + x2) / math.tan(angle_to_ver1)) - DIST_ENDSTOP_CAM if abs(angle_to_ver1) > 0 else 0
         y_z = abs((z1 + z2) / math.tan(angle_to_hor1)) if abs(angle_to_hor1) > 0 else 0
-        if y == 0:
+        if y == 0 or x1 == 0 or y > 172:
             y = y_z
 
         if y == 0:

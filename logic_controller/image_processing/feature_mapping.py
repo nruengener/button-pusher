@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 from config import TRACE
-from image_processing import geometry
+from geometry_distance import geometry
 
 MIN_MATCH_COUNT = 3  # 10
 FLANN_INDEX_KDTREE = 0
@@ -26,7 +26,7 @@ def match_keypoints_to_polygon(img1, img2):
         # det = cv2.BRISK_create()
         # det = cv2.ORB_create()
 
-        # find the keypoints and descriptors with ORB or BRISK (brisk seems to be better), SIFT is too slow
+        # find the keypoints and descriptors with SURF, ORB or BRISK, SIFT is too slow
         kp1, des1 = det.detectAndCompute(img1, None)
         kp2, des2 = det.detectAndCompute(img2, None)
 
@@ -151,7 +151,8 @@ def match_keypoints(img1, img2):
                        flags=2)
 
     img3 = cv2.drawMatches(img1, kp1, img2, kp2, good, None, **draw_params)
-    cv2.imshow("fm", img3)
+    if TRACE:
+        cv2.imshow("fm", img3)
 
     return result_x, result_y
     # plt.imshow(img3, 'gray'), plt.show()

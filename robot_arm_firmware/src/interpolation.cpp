@@ -85,8 +85,8 @@ int Interpolation::setInterpolation(Point p0, Point p1, float av) {
     }
 
     // todo: serial command for max speed?
-    if (v > 90) {
-        v = 90;
+    if (v > 120) {
+        v = 120;
     }
 
     tmul = v / dist;
@@ -131,6 +131,7 @@ void Interpolation::updateActualPosition() {
         fcallback(); // execute callback
     }
 
+    // synchrone PTP-Bahnplanung
     xPosmm = xStartmm + progress * xDelta;
     yPosmm = yStartmm + progress * yDelta;
     zPosmm = zStartmm + progress * zDelta;

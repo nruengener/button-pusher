@@ -18,5 +18,5 @@ DIST_CAM_BASE_START = 0.137
 DIST_ENDSTOP_CAM = 0.015  # distance from camera to endstop in (x,y)-plane
 DIST_ENDSTOP_CAM_Z = 0.015  # vertical distance from camera to endstop
 
-DEBUG = True
+DEBUG = False
 TRACE = False

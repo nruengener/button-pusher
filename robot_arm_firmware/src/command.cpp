@@ -1,5 +1,8 @@
 #include "command.h"
 
+/**
+ * Handles communication over serial port.
+ */
 Command::Command() {
     //initialize Command to a zero-move value;
     command.valueX = NAN;

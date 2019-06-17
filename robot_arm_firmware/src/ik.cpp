@@ -87,14 +87,14 @@ bool solve(float x, float y, float z, float& a0, float& a1, float& a2)
 {
     // Solve top-down view
     float r, th0;
-    cart2polar(y, x, r, th0);
+    cart2polar(y, x, r, th0);  // th0 is angle between r and y
 
     // Account for the wrist length!
     r -= L3;
 
     // In arm plane, convert to polar
     float ang_P, R;
-    cart2polar(r, z, R, ang_P);  // ang_p is angle to horizontal
+    cart2polar(r, z, R, ang_P);  // ang_p is angle to horizontal (between R and r)
 
     // Solve arm inner angles as required
     float B, C;

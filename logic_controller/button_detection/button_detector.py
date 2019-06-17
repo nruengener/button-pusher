@@ -2,6 +2,7 @@ import os
 import tensorflow as tf
 import numpy as np
 from button_detection import visualization_utils as vis_util, label_map_util
+from config import DEBUG, TRACE
 
 CURRENT_ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -63,19 +64,20 @@ class ButtonDetector:
             feed_dict={image_tensor: image_np_expanded})
 
         # Visualization of the results of a detection.
-        vis_util.visualize_boxes_and_labels_on_image_array(
-            image_np,
-            np.squeeze(boxes),
-            np.squeeze(classes).astype(np.int32),
-            np.squeeze(scores),
-            category_index,
-            use_normalized_coordinates=True,
-            line_thickness=4)
+        if DEBUG:
+            vis_util.visualize_boxes_and_labels_on_image_array(
+                image_np,
+                np.squeeze(boxes),
+                np.squeeze(classes).astype(np.int32),
+                np.squeeze(scores),
+                category_index,
+                use_normalized_coordinates=True,
+                line_thickness=4)
 
         boxes_thres = []
         for i, b in enumerate(np.squeeze(boxes)):
             if np.squeeze(scores)[i] > THRESHOLD:
-                print("box: ", b, ", score: ", np.squeeze(scores)[i], "i: ", i)
+                # print("box: ", b, ", score: ", np.squeeze(scores)[i], "i: ", i)
                 boxes_thres.append(b)
 
         print("Detected ", len(boxes_thres), " buttons with score > ", THRESHOLD)
